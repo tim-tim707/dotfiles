@@ -1,7 +1,9 @@
 filetype plugin indent on
 
+syntax on
+set t_Co=256
 colorscheme corporation_modified
-"set t_Co=256"
+
 
 "visual options"
 set number
@@ -9,6 +11,7 @@ set colorcolumn=81
 
 set linebreak
 set showbreak=+++
+set list listchars=tab:>-,trail:.
 
 set showmatch
 

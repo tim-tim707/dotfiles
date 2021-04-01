@@ -15,6 +15,12 @@ set list listchars=tab:>-,trail:.
 
 set showmatch
 
+"Cursor visual"
+ 
+ let &t_EI.="\e[1 q\e]12;grey\x7" " Edit mode blinking block lime
+ let &t_SI.="\e[5 q\e]12;grey\x7" " Insert mode blinking bar xterm
+ let &t_te.="\e[5 q\e]12;grey\x7" " Terminal blinking bar
+
 "Quality of life options"
 set scrolloff=10
 

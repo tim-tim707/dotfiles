@@ -13,10 +13,12 @@ set colorcolumn=80
 set linebreak
 set textwidth=80
 set showbreak=+++
-set list listchars=tab:>-,eol:¬,trail:.,nbsp:¤
-set backspace=eol,indent,start
-
 set showmatch
+
+set list listchars=tab:>-,eol:¬,trail:.,nbsp:¤
+
+"Quality of life options"
+set backspace=eol,indent,start
 set scrolloff=10
 
 "Cursor visual"

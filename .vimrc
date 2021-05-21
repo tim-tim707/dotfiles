@@ -49,17 +49,18 @@ set splitbelow
 set splitright
 set fillchars=vert:│
 
+"Map arrows to window resize"
+noremap <LEFT> <C-w>5<
+noremap <RIGHT> <C-w>5>
+noremap <UP> <C-w>5+
+noremap <DOWN> <C-w>5-
+
 "command completion"
 set wildmenu
 set wildmode=longest:full,list:full
 
 "disable automatic comment insertion"
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-map <LEFT> <Nop>
-map <RIGHT> <Nop>
-map <UP> <Nop>
-map <DOWN> <Nop>
 
 "Quickfix commands"
 noremap <C-m> :wa<CR>:make<CR>:copen<CR><CR>

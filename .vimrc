@@ -8,17 +8,15 @@ colorscheme corporation_modified
 "visual options"
 set number
 set relativenumber
-set colorcolumn=80
+set colorcolumn=81
 
 set linebreak
 set textwidth=80
 set showbreak=+++
-set showmatch
-
 set list listchars=tab:>-,eol:¬,trail:.,nbsp:¤
-
-"Quality of life options"
 set backspace=eol,indent,start
+
+set showmatch
 set scrolloff=10
 
 "Cursor visual"
@@ -49,12 +47,6 @@ set splitbelow
 set splitright
 set fillchars=vert:│
 
-"Map arrows to window resize"
-noremap <LEFT> <C-w>5<
-noremap <RIGHT> <C-w>5>
-noremap <UP> <C-w>5+
-noremap <DOWN> <C-w>5-
-
 "command completion"
 set wildmenu
 set wildmode=longest:full,list:full
@@ -62,11 +54,29 @@ set wildmode=longest:full,list:full
 "disable automatic comment insertion"
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+"Map arrows to window resize"
+nnoremap <LEFT> <C-w>5<
+nnoremap <RIGHT> <C-w>5>
+nnoremap <UP> <C-w>5+
+nnoremap <DOWN> <C-w>5-
+
 "Quickfix commands"
 noremap <C-m> :wa<CR>:make<CR>:copen<CR><CR>
 noremap <C-j> :cn<CR>
 noremap <C-k> :cp<CR>
 "Ctrl-m : make ctrl-j / ctrl-k : go to errors"
+
+"File explorer"
+nnoremap <C-e> :Lex<CR>
+
+"Status bar"
+set laststatus=2 "always on"
+set statusline=
+set statusline+=\ %F
+
+set statusline+=%= "right side append"
+set statusline+=\ %l/%L:%c
+set statusline+=\ 
 
 "Auto indent"
 map <F7> gg=G<C-o><C-o>

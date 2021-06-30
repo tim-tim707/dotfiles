@@ -69,6 +69,9 @@ noremap <C-k> :cp<CR>
 "File explorer"
 nnoremap <C-e> :Lex<CR>
 
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
 "Status bar"
 set laststatus=2 "always on"
 set statusline=

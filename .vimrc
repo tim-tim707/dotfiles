@@ -6,6 +6,15 @@ set encoding=utf-8
 
 colorscheme corporation_modified
 
+"
+" Plugins
+"
+
+
+"
+" Settings
+"
+
 "visual options"
 set number
 set relativenumber
@@ -31,7 +40,6 @@ set smartcase
 set ignorecase
 set hlsearch
 set incsearch
-set path+=**
 
 "Tab options"
 set expandtab
@@ -53,11 +61,25 @@ set fillchars=vert:│
 set wildmenu
 set wildmode=longest:full,list:full
 
+"Status bar"
+set laststatus=2 "always on"
+set statusline=
+set statusline+=\ %F
+
+set statusline+=%= "right side append"
+set statusline+=\ %l/%L\ :\ %c
+set statusline+=\ 
+
 "Miscellaneous"
 set noswapfile
+set path+=**
 
 "disable automatic comment insertion when using o/O"
 autocmd FileType * setlocal formatoptions-=o
+
+"
+" Remappings
+"
 
 "Map arrows to window resize"
 nnoremap <LEFT> <C-w>5<
@@ -77,16 +99,19 @@ nnoremap <C-e> :Lex<CR>
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-"Status bar"
-set laststatus=2 "always on"
-set statusline=
-set statusline+=\ %F
-
-set statusline+=%= "right side append"
-set statusline+=\ %l/%L\ :\ %c
-set statusline+=\ 
-
 "Auto indent"
-map <F7> gg=G<C-o><C-o>
+noremap <F7> gg=G<C-o><C-o>
+
+" Move lines with Shift UP/DOWN arrows
+nnoremap <S-UP> :m .-2<CR>
+nnoremap <S-DOWN> :m .+1<CR>
+
+"
+" File Type local options
+"
+
 "Makefile"
 autocmd FileType make setlocal noexpandtab shiftwidth=8 softtabstop=0
+
+"C files options"
+autocmd FileType c,cpp setlocal path+=/usr/include include &

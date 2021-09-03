@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/home'
-let g:netrw_dirhist_3='/home/tim'
-let g:netrw_dirhist_2='/home/tim/.vscode-oss'
-let g:netrw_dirhist_1='/home/tim/.vim/syntax'

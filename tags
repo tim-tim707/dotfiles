@@ -1,0 +1,715 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/tim/dotfiles/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+<C-e>	.vimrc	/^nnoremap <C-e> :Lex<CR>$/;"	m
+<C-j>	.vimrc	/^nnoremap <C-j> :cn<CR>$/;"	m
+<C-k>	.vimrc	/^nnoremap <C-k> :cp<CR>$/;"	m
+<C-l>	.vimrc	/^nnoremap <silent> <C-l> :nohl<CR><C-l>$/;"	m
+<C-m>	.vimrc	/^nnoremap <C-m> :wa<CR>:make<CR>:copen<CR><CR>$/;"	m
+<DOWN>	.vimrc	/^nnoremap <DOWN> <C-w>5-$/;"	m
+<F7>	.vimrc	/^map <F7> gg=G<C-o><C-o>$/;"	m
+<LEFT>	.vimrc	/^nnoremap <LEFT> <C-w>5<$/;"	m
+<RIGHT>	.vimrc	/^nnoremap <RIGHT> <C-w>5>$/;"	m
+<SID>:	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^nnoremap <SID>: :<C-U><C-R>=v:count ? v:count : ''<CR>$/;"	m
+<UP>	.vimrc	/^nnoremap <UP> <C-w>5+$/;"	m
+BUILD_INVERTED_INDEX	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set BUILD_INVERTED_INDEX=1$/;"	v
+BUILD_INVERTED_INDEX	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set BUILD_INVERTED_INDEX=0$/;"	v
+CSCOPE_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_ARGS=%CSCOPE_ARGS% -q$/;"	v
+CSCOPE_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=$/;"	v
+CSCOPE_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=%CSCOPE_ARGS% -i %DB_FILE%.files$/;"	v
+CSCOPE_EXE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_EXE=%~2$/;"	v
+CSCOPE_EXE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_EXE=cscope$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% "%PROJECT_ROOT%"$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% --append "%UPDATED_SOURCE%"$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% -L %TAGS_FILE%.files$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% %~2$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --exclude=%2$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --options=%2$/;"	v
+CTAGS_ARGS	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set CTAGS_ARGS=$/;"	v
+CTAGS_EXE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_EXE=%~2$/;"	v
+CTAGS_EXE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set CTAGS_EXE=ctags$/;"	v
+CleanUp	.vim/bundle/vim-gutentags/plat/unix/update_scopedb.sh	/^CleanUp() {$/;"	f
+Contributing	.vim/bundle/vim-gutentags/CONTRIBUTING.md	/^# Contributing$/;"	c
+DB_FILE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set DB_FILE=%~2$/;"	v
+DB_FILE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set DB_FILE=cscope.out$/;"	v
+DoneParseArgs	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^:DoneParseArgs$/;"	l
+DoneParseArgs	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^:DoneParseArgs$/;"	l
+FAQ	.vim/pack/tpope/start/fugitive/README.markdown	/^## FAQ$/;"	s	chapter:fugitive.vim
+FILESIZE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^for \/F %%F in ("%DB_FILE%.files") do set FILESIZE=%%~zF$/;"	v
+FILESIZE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set FILESIZE=0$/;"	v
+FILE_LIST_CMD	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD_IS_ABSOLUTE=1$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set FILE_LIST_CMD_IS_ABSOLUTE=0$/;"	v
+FugitiveCommonDir	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveCommonDir(...) abort$/;"	f
+FugitiveConfig	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveConfig(...) abort$/;"	f
+FugitiveConfigGet	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveConfigGet(name, ...) abort$/;"	f
+FugitiveConfigGetAll	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveConfigGetAll(name, ...) abort$/;"	f
+FugitiveConfigGetRegexp	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveConfigGetRegexp(pattern, ...) abort$/;"	f
+FugitiveDetect	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveDetect(...) abort$/;"	f
+FugitiveDidChange	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveDidChange(...) abort$/;"	f
+FugitiveExecute	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveExecute(args, ...) abort$/;"	f
+FugitiveExtractGitDir	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveExtractGitDir(path) abort$/;"	f
+FugitiveFind	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveFind(...) abort$/;"	f
+FugitiveGitDir	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveGitDir(...) abort$/;"	f
+FugitiveGitPath	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveGitPath(path) abort$/;"	f
+FugitiveGitVersion	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveGitVersion(...) abort$/;"	f
+FugitiveHead	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveHead(...) abort$/;"	f
+FugitiveIsGitDir	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveIsGitDir(...) abort$/;"	f
+FugitiveParse	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveParse(...) abort$/;"	f
+FugitivePath	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitivePath(...) abort$/;"	f
+FugitivePrepare	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitivePrepare(...) abort$/;"	f
+FugitiveReal	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveReal(...) abort$/;"	f
+FugitiveRemoteUrl	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveRemoteUrl(...) abort$/;"	f
+FugitiveResult	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveResult(...) abort$/;"	f
+FugitiveShellCommand	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveShellCommand(...) abort$/;"	f
+FugitiveStatusline	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveStatusline(...) abort$/;"	f
+FugitiveVimPath	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveVimPath(path) abort$/;"	f
+FugitiveWorkTree	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! FugitiveWorkTree(...) abort$/;"	f
+G	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^  command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#Complete G   exe fugitive#Comm/;"	c
+Git	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#Complete Git exe fugitive#Comman/;"	c
+Gutentags	.vim/bundle/vim-gutentags/README.md	/^# Gutentags$/;"	c
+GutentagsToggleEnabled	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleEnabled :let g:gutentags_enabled=!g:gutentags_enabled$/;"	c
+GutentagsToggleFake	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleFake    :call gutentags#fake()$/;"	c
+GutentagsToggleTrace	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleTrace   :call gutentags#toggletrace()$/;"	c
+GutentagsUpdate	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    command! -buffer -bang GutentagsUpdate :call s:manual_update_tags(<bang>0)$/;"	c
+Helptags	.vim/autoload/pathogen.vim	/^command! -bar Helptags :call pathogen#helptags()$/;"	c
+How?	.vim/bundle/vim-gutentags/README.md	/^## How?$/;"	s	chapter:Gutentags
+INDEX_WHOLE_PROJECT	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v
+INDEX_WHOLE_PROJECT	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v
+Installation	.vim/pack/tpope/start/fugitive/README.markdown	/^## Installation$/;"	s	chapter:fugitive.vim
+LOG_FILE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^set LOG_FILE=$/;"	v
+LOG_FILE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set LOG_FILE=$/;"	v
+License	.vim/pack/tpope/start/fugitive/README.markdown	/^## License$/;"	s	chapter:fugitive.vim
+LoopParseArgs	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^:LoopParseArgs$/;"	l
+LoopParseArgs	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^:LoopParseArgs$/;"	l
+PAUSE_BEFORE_EXIT	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set PAUSE_BEFORE_EXIT=1$/;"	v
+PAUSE_BEFORE_EXIT	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set PAUSE_BEFORE_EXIT=0$/;"	v
+POST_PROCESS_CMD	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set POST_PROCESS_CMD=%~2$/;"	v
+POST_PROCESS_CMD	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set POST_PROCESS_CMD=$/;"	v
+PROJECT_ROOT	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set PROJECT_ROOT=%~2$/;"	v
+PROJECT_ROOT	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set PROJECT_ROOT=$/;"	v
+PROJ_ROOT	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set PROJ_ROOT=%~2$/;"	v
+ParseArgs	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^:ParseArgs$/;"	l
+ParseArgs	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^:ParseArgs$/;"	l
+Pushing	.vim/bundle/vim-gutentags/CONTRIBUTING.md	/^## Pushing$/;"	s	chapter:Contributing
+Related Projects	.vim/bundle/vim-gutentags/README.md	/^# Related Projects$/;"	c
+Screencasts	.vim/pack/tpope/start/fugitive/README.markdown	/^## Screencasts$/;"	s	chapter:fugitive.vim
+Self-Promotion	.vim/pack/tpope/start/fugitive/README.markdown	/^## Self-Promotion$/;"	s	chapter:fugitive.vim
+ShowUsage	.vim/bundle/vim-gutentags/plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
+ShowUsage	.vim/bundle/vim-gutentags/plat/unix/update_tags.sh	/^ShowUsage() {$/;"	f
+TAGS_FILE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v
+TAGS_FILE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v
+Testing	.vim/bundle/vim-gutentags/CONTRIBUTING.md	/^## Testing$/;"	s	chapter:Contributing
+UPDATED_SOURCE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^    set UPDATED_SOURCE=%~2$/;"	v
+UPDATED_SOURCE	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^set UPDATED_SOURCE=$/;"	v
+Unlock	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^:Unlock$/;"	l
+Usage	.vim/bundle/vim-gutentags/plat/win32/update_scopedb.cmd	/^:Usage$/;"	l
+Usage	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^:Usage$/;"	l
+What?	.vim/bundle/vim-gutentags/README.md	/^## What?$/;"	s	chapter:Gutentags
+Why?	.vim/bundle/vim-gutentags/README.md	/^## Why?$/;"	s	chapter:Gutentags
+Writing	.vim/bundle/vim-gutentags/CONTRIBUTING.md	/^## Writing$/;"	s	chapter:Contributing
+b:current_syntax	.vim/pack/tpope/start/fugitive/syntax/fugitive.vim	/^let b:current_syntax = "fugitive"$/;"	v
+b:current_syntax	.vim/pack/tpope/start/fugitive/syntax/fugitiveblame.vim	/^let b:current_syntax = "fugitiveblame"$/;"	v
+b:did_ftplugin	.vim/pack/tpope/start/fugitive/ftplugin/fugitiveblame.vim	/^let b:did_ftplugin = 1$/;"	v
+fugitive	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^augroup fugitive$/;"	a
+fugitive#Autowrite	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Autowrite() abort$/;"	f
+fugitive#BlameComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BlameComplete(A, L, P) abort$/;"	f
+fugitive#BlameFileType	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BlameFileType() abort$/;"	f
+fugitive#BlameSyntax	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BlameSyntax() abort$/;"	f
+fugitive#BrowseCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BrowseCommand(line1, count, range, bang, mods, arg, args) abort$/;"	f
+fugitive#BufReadCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BufReadCmd(...) abort$/;"	f
+fugitive#BufReadStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BufReadStatus() abort$/;"	f
+fugitive#BufWriteCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#BufWriteCmd(...) abort$/;"	f
+fugitive#CanDiffoff	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CanDiffoff(buf) abort$/;"	f
+fugitive#Cd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Cd(path, ...) abort$/;"	f
+fugitive#CdComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CdComplete(A, L, P) abort$/;"	f
+fugitive#Cfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Cfile() abort$/;"	f
+fugitive#Command	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Command(line1, line2, range, bang, mods, arg) abort$/;"	f
+fugitive#CommitComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CommitComplete(A, L, P, ...) abort$/;"	f
+fugitive#CommonDir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CommonDir(dir) abort$/;"	f
+fugitive#Complete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Complete(lead, ...) abort$/;"	f
+fugitive#CompleteForWorkingDir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CompleteForWorkingDir(A, L, P, ...) abort$/;"	f
+fugitive#CompleteObject	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CompleteObject(base, ...) abort$/;"	f
+fugitive#CompletePath	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#CompletePath(base, ...) abort$/;"	f
+fugitive#Config	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Config(...) abort$/;"	f
+fugitive#ConfigGetAll	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ConfigGetAll(name, ...) abort$/;"	f
+fugitive#ConfigGetRegexp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ConfigGetRegexp(pattern, ...) abort$/;"	f
+fugitive#Cwindow	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Cwindow() abort$/;"	f
+fugitive#DeleteCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#DeleteCommand(line1, line2, range, bang, mods, arg, args) abort$/;"	f
+fugitive#DidChange	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#DidChange(...) abort$/;"	f
+fugitive#DiffClose	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#DiffClose() abort$/;"	f
+fugitive#Diffsplit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Diffsplit(autodir, keepfocus, mods, arg, args) abort$/;"	f
+fugitive#EditComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#EditComplete(A, L, P) abort$/;"	f
+fugitive#EfmDir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#EfmDir(...) abort$/;"	f
+fugitive#Execute	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Execute(...) abort$/;"	f
+fugitive#Expand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Expand(object) abort$/;"	f
+fugitive#ExpireConfig	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ExpireConfig(...) abort$/;"	f
+fugitive#FetchComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#FetchComplete(A, L, P, ...) abort$/;"	f
+fugitive#FileReadCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#FileReadCmd(...) abort$/;"	f
+fugitive#FileWriteCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#FileWriteCmd(...) abort$/;"	f
+fugitive#Find	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Find(object, ...) abort$/;"	f
+fugitive#Foldtext	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Foldtext() abort$/;"	f
+fugitive#GX	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#GX() abort$/;"	f
+fugitive#GitVersion	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#GitVersion(...) abort$/;"	f
+fugitive#GrepCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#GrepCommand(line1, line2, range, bang, mods, arg) abort$/;"	f
+fugitive#GrepComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#GrepComplete(A, L, P) abort$/;"	f
+fugitive#Head	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Head(...) abort$/;"	f
+fugitive#Init	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Init() abort$/;"	f
+fugitive#LogCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#LogCommand(line1, count, range, bang, mods, args, type) abort$/;"	f
+fugitive#LogComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#LogComplete(A, L, P) abort$/;"	f
+fugitive#MapCfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#MapCfile(...) abort$/;"	f
+fugitive#MapJumps	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#MapJumps(...) abort$/;"	f
+fugitive#MergeComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#MergeComplete(A, L, P, ...) abort$/;"	f
+fugitive#MessageCfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#MessageCfile() abort$/;"	f
+fugitive#MoveCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#MoveCommand(line1, line2, range, bang, mods, arg, args) abort$/;"	f
+fugitive#Object	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Object(...) abort$/;"	f
+fugitive#Open	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Open(cmd, bang, mods, arg, args) abort$/;"	f
+fugitive#PagerFor	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PagerFor(argv, ...) abort$/;"	f
+fugitive#Path	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Path(url, ...) abort$/;"	f
+fugitive#PathComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PathComplete(...) abort$/;"	f
+fugitive#PorcelainCfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PorcelainCfile() abort$/;"	f
+fugitive#Prepare	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Prepare(...) abort$/;"	f
+fugitive#PrepareDirEnvGitFlagsArgs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PrepareDirEnvGitFlagsArgs(...) abort$/;"	f
+fugitive#PrepareJob	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PrepareJob(...) abort$/;"	f
+fugitive#PullComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PullComplete(A, L, P, ...) abort$/;"	f
+fugitive#PushComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#PushComplete(A, L, P, ...) abort$/;"	f
+fugitive#ReadCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ReadCommand(line1, count, range, bang, mods, arg, args) abort$/;"	f
+fugitive#ReadComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ReadComplete(A, L, P) abort$/;"	f
+fugitive#Real	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Real(url) abort$/;"	f
+fugitive#RebaseComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RebaseComplete(A, L, P, ...) abort$/;"	f
+fugitive#ReloadStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ReloadStatus(...) abort$/;"	f
+fugitive#RemoteHttpHeaders	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RemoteHttpHeaders(remote) abort$/;"	f
+fugitive#RemoteUrl	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RemoteUrl(...) abort$/;"	f
+fugitive#RemoveCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RemoveCommand(line1, line2, range, bang, mods, arg, args) abort$/;"	f
+fugitive#RenameCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RenameCommand(line1, line2, range, bang, mods, arg, args) abort$/;"	f
+fugitive#RenameComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RenameComplete(A,L,P) abort$/;"	f
+fugitive#ResolveRemote	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ResolveRemote(remote) abort$/;"	f
+fugitive#Result	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Result(...) abort$/;"	f
+fugitive#Resume	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Resume() abort$/;"	f
+fugitive#RevParse	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RevParse(rev, ...) abort$/;"	f
+fugitive#RevertComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#RevertComplete(A, L, P, ...) abort$/;"	f
+fugitive#ShellCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#ShellCommand(...) abort$/;"	f
+fugitive#SourceCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#SourceCmd(...) abort$/;"	f
+fugitive#SshConfig	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#SshConfig(host, ...) abort$/;"	f
+fugitive#SshHostAlias	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#SshHostAlias(authority) abort$/;"	f
+fugitive#Statusline	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Statusline(...) abort$/;"	f
+fugitive#Wait	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#Wait(job_or_jobs, ...) abort$/;"	f
+fugitive#WqCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#WqCommand(...) abort$/;"	f
+fugitive#WriteCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#WriteCommand(line1, line2, range, bang, mods, arg, args) abort$/;"	f
+fugitive#buffer	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#buffer(...) abort$/;"	f
+fugitive#delete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#delete(url, ...) abort$/;"	f
+fugitive#detect	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#detect(path) abort$/;"	f
+fugitive#extract_git_dir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#extract_git_dir(path) abort$/;"	f
+fugitive#filereadable	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#filereadable(url) abort$/;"	f
+fugitive#filewritable	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#filewritable(url) abort$/;"	f
+fugitive#foldtext	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#foldtext() abort$/;"	f
+fugitive#getfperm	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#getfperm(url) abort$/;"	f
+fugitive#getfsize	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#getfsize(url) abort$/;"	f
+fugitive#getftime	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#getftime(url) abort$/;"	f
+fugitive#getftype	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#getftype(url) abort$/;"	f
+fugitive#glob	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#glob(url, ...) abort$/;"	f
+fugitive#head	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#head(...) abort$/;"	f
+fugitive#is_git_dir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#is_git_dir(path) abort$/;"	f
+fugitive#isdirectory	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#isdirectory(url) abort$/;"	f
+fugitive#readfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#readfile(url, ...) abort$/;"	f
+fugitive#repo	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#repo(...) abort$/;"	f
+fugitive#resolve	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#resolve(url) abort$/;"	f
+fugitive#setfperm	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#setfperm(url, perm) abort$/;"	f
+fugitive#simplify	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#simplify(url) abort$/;"	f
+fugitive#statusline	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#statusline(...) abort$/;"	f
+fugitive#writefile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! fugitive#writefile(lines, url, ...) abort$/;"	f
+fugitive.vim	.vim/pack/tpope/start/fugitive/README.markdown	/^# fugitive.vim$/;"	c
+fugitive_blame	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^augroup fugitive_blame$/;"	a
+fugitive_diff	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^augroup fugitive_diff$/;"	a
+fugitive_dummy_events	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^augroup fugitive_dummy_events$/;"	a
+fugitive_job	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^augroup fugitive_job$/;"	a
+fugitive_status	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^augroup fugitive_status$/;"	a
+fugitive_temp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^augroup fugitive_temp$/;"	a
+g:	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^            let g:[newname] = g:[key]$/;"	v
+g:__gutentags_vim_is_leaving	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    let g:__gutentags_vim_is_leaving = 1$/;"	v
+g:__gutentags_vim_is_leaving	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:__gutentags_vim_is_leaving = 0$/;"	v
+g:_fugitive_last_job	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:_fugitive_last_job = a:state$/;"	v
+g:autoloaded_fugitive	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let g:autoloaded_fugitive = 1$/;"	v
+g:colors_name	.vim/colors/corporation_modified.vim	/^let g:colors_name = "corporation_modified"$/;"	v
+g:fugitive_event	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:fugitive_event = dir$/;"	v
+g:fugitive_result	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^      let g:fugitive_result = a:dir$/;"	v
+g:fugitive_summary_format	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
+g:gutentags_add_ctrlp_root_markers	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_ctrlp_root_markers = get(g:, 'gutentags_add_ctrlp_root_markers', 1)$/;"	v
+g:gutentags_add_default_project_roots	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_default_project_roots = get(g:, 'gutentags_add_default_project_roots', 1)$/;"	v
+g:gutentags_auto_add_cscope	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_auto_add_cscope = 1$/;"	v
+g:gutentags_auto_add_gtags_cscope	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
+g:gutentags_background_update	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_background_update = get(g:, 'gutentags_background_update', 1)$/;"	v
+g:gutentags_cache_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = ''$/;"	v
+g:gutentags_cache_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':p')$/;"	v
+g:gutentags_cache_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':s?[\/\\\\]$??')$/;"	v
+g:gutentags_cscope_build_inverted_index	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_build_inverted_index = 0$/;"	v
+g:gutentags_cscope_executable	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_executable = 'cscope'$/;"	v
+g:gutentags_ctags_auto_set_tags	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_auto_set_tags = get(g:, 'gutentags_ctags_auto_set_tags', 1)$/;"	v
+g:gutentags_ctags_check_tagfile	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_check_tagfile = get(g:, 'gutentags_ctags_check_tagfile', 0)$/;"	v
+g:gutentags_ctags_exclude	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude = get(g:, 'gutentags_ctags_exclude', [])$/;"	v
+g:gutentags_ctags_exclude_wildignore	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude_wildignore = get(g:, 'gutentags_ctags_exclude_wildignore', 1)$/;"	v
+g:gutentags_ctags_executable	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_executable = get(g:, 'gutentags_ctags_executable', 'ctags')$/;"	v
+g:gutentags_ctags_extra_args	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_extra_args = get(g:, 'gutentags_ctags_extra_args', [])$/;"	v
+g:gutentags_ctags_options_file	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_options_file = get(g:, 'gutentags_ctags_options_file', '.gutctags')$/;"	v
+g:gutentags_ctags_post_process_cmd	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_post_process_cmd = get(g:, 'gutentags_ctags_post_process_cmd', '')$/;"	v
+g:gutentags_ctags_tagfile	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_tagfile = get(g:, 'gutentags_ctags_tagfile', 'tags')$/;"	v
+g:gutentags_debug	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_debug = get(g:, 'gutentags_debug', 0)$/;"	v
+g:gutentags_define_advanced_commands	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_define_advanced_commands = get(g:, 'gutentags_define_advanced_commands', 0)$/;"	v
+g:gutentags_enabled	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^            let g:gutentags_enabled = 0$/;"	v
+g:gutentags_enabled	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_enabled = get(g:, 'gutentags_enabled', 1)$/;"	v
+g:gutentags_exclude_filetypes	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_filetypes = get(g:, 'gutentags_exclude_filetypes', [])$/;"	v
+g:gutentags_exclude_project_root	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_project_root = get(g:, 'gutentags_exclude_project_root', ['\/usr\/local'/;"	v
+g:gutentags_fake	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_fake = a:1$/;"	v
+g:gutentags_fake	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    let g:gutentags_fake = !g:gutentags_fake$/;"	v
+g:gutentags_fake	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_fake = get(g:, 'gutentags_fake', 0)$/;"	v
+g:gutentags_file_list_command	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_file_list_command = get(g:, 'gutentags_file_list_command', '')$/;"	v
+g:gutentags_generate_on_empty_buffer	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_empty_buffer = get(g:, 'gutentags_generate_on_empty_buffer', 0)$/;"	v
+g:gutentags_generate_on_missing	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_missing = get(g:, 'gutentags_generate_on_missing', 1)$/;"	v
+g:gutentags_generate_on_new	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_new = get(g:, 'gutentags_generate_on_new', 1)$/;"	v
+g:gutentags_generate_on_write	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_write = get(g:, 'gutentags_generate_on_write', 1)$/;"	v
+g:gutentags_gtags_cscope_executable	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_cscope_executable = 'gtags-cscope'$/;"	v
+g:gutentags_gtags_dbpath	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_dbpath = ''$/;"	v
+g:gutentags_gtags_executable	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_executable = 'gtags'$/;"	v
+g:gutentags_gtags_options_file	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_options_file = '.gutgtags'$/;"	v
+g:gutentags_init_user_func	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_init_user_func = get(g:, 'gutentags_init_user_func', $/;"	v
+g:gutentags_modules	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_modules = get(g:, 'gutentags_modules', ['ctags'])$/;"	v
+g:gutentags_pause_after_update	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_pause_after_update = get(g:, 'gutentags_pause_after_update', 0)$/;"	v
+g:gutentags_plat_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . "\\\\plat\\\\win32\\\\"$/;"	v
+g:gutentags_plat_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . '\/plat\/unix\/'$/;"	v
+g:gutentags_project_info	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_info = get(g:, 'gutentags_project_info', [])$/;"	v
+g:gutentags_project_root	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_project_root += ['.git', '.hg', '.svn', '.bzr', '_darcs', '_FOSSIL_', '.fslc/;"	v
+g:gutentags_project_root	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_root = get(g:, 'gutentags_project_root', [])$/;"	v
+g:gutentags_project_root_finder	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_root_finder = get(g:, 'gutentags_project_root_finder', '')$/;"	v
+g:gutentags_res_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . "\\\\res\\\\"$/;"	v
+g:gutentags_res_dir	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . '\/res\/'$/;"	v
+g:gutentags_resolve_symlinks	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_resolve_symlinks = get(g:, 'gutentags_resolve_symlinks', 0)$/;"	v
+g:gutentags_scopefile	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_scopefile = 'cscope.out'$/;"	v
+g:gutentags_script_ext	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.cmd'$/;"	v
+g:gutentags_script_ext	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.sh'$/;"	v
+g:gutentags_trace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^            let g:gutentags_trace = l:prev_trace$/;"	v
+g:gutentags_trace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_trace = 1$/;"	v
+g:gutentags_trace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_trace = a:1$/;"	v
+g:gutentags_trace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^        let g:gutentags_trace = l:trace_backup$/;"	v
+g:gutentags_trace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    let g:gutentags_trace = !g:gutentags_trace$/;"	v
+g:gutentags_trace	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_trace = get(g:, 'gutentags_trace', 0)$/;"	v
+g:gutentags_use_jobs	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_use_jobs = get(g:, 'gutentags_use_jobs', has('job'))$/;"	v
+g:io_fugitive	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:io_fugitive = {$/;"	v
+g:loaded_fugitive	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
+g:loaded_gutentags	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^let g:loaded_gutentags = 1$/;"	v
+g:loaded_pathogen	.vim/autoload/pathogen.vim	/^let g:loaded_pathogen = 1$/;"	v
+g:virtual_scriptnames	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^    let g:virtual_scriptnames = {}$/;"	v
+g:virtual_scriptnames	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let g:virtual_scriptnames[temp] = amatch$/;"	v
+gutentags#add_job	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#add_job(module, tags_file, data) abort$/;"	f
+gutentags#build_default_job_options	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#build_default_job_options(module) abort$/;"	f
+gutentags#chdir	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#chdir(path)$/;"	f
+gutentags#cscope#generate	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#cscope#init	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#init(project_root) abort$/;"	f
+gutentags#cscope#on_job_exit	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#ctags#generate	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#ctags#init	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#init(project_root) abort$/;"	f
+gutentags#ctags#on_job_exit	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#default_get_project_root	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_get_project_root(path) abort$/;"	f
+gutentags#default_stderr_cb	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_stderr_cb(chan, msg) abort$/;"	f
+gutentags#default_stdout_cb	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_stdout_cb(chan, msg) abort$/;"	f
+gutentags#error	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#error(message)$/;"	f
+gutentags#fake	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#fake(...)$/;"	f
+gutentags#find_job_index_by_data	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#find_job_index_by_data(module, data) abort$/;"	f
+gutentags#find_job_index_by_tags_file	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#find_job_index_by_tags_file(module, tags_file) abort$/;"	f
+gutentags#get_cachefile	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_cachefile(root_dir, filename) abort$/;"	f
+gutentags#get_job_data	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_job_data(module, job_idx) abort$/;"	f
+gutentags#get_job_tags_file	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_job_tags_file(module, job_idx) abort$/;"	f
+gutentags#get_plat_file	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_plat_file(filename) abort$/;"	f
+gutentags#get_project_file_list_cmd	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_file_list_cmd(path) abort$/;"	f
+gutentags#get_project_info	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_info(path) abort$/;"	f
+gutentags#get_project_root	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_root(path) abort$/;"	f
+gutentags#get_res_file	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_res_file(filename) abort$/;"	f
+gutentags#gtags_cscope#generate	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#gtags_cscope#init	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#init(project_root) abort$/;"	f
+gutentags#gtags_cscope#on_job_exit	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#inprogress	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#inprogress()$/;"	f
+gutentags#is_path_rooted	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#is_path_rooted(path) abort$/;"	f
+gutentags#make_args	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#make_args(cmd) abort$/;"	f
+gutentags#normalizepath	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#normalizepath(path)$/;"	f
+gutentags#on_vim_leave_pre	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#on_vim_leave_pre() abort$/;"	f
+gutentags#remove_job	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#remove_job(module, job_idx) abort$/;"	f
+gutentags#remove_job_by_data	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#remove_job_by_data(module, data) abort$/;"	f
+gutentags#rescan	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#rescan(...)$/;"	f
+gutentags#setup_gutentags	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#setup_gutentags() abort$/;"	f
+gutentags#shellslash	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#shellslash(path)$/;"	f
+gutentags#start_job	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#start_job(cmd, opts) abort$/;"	f
+gutentags#statusline	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#statusline(...) abort$/;"	f
+gutentags#statusline_cb	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#statusline_cb(fmt_cb, ...) abort$/;"	f
+gutentags#stripslash	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#stripslash(path)$/;"	f
+gutentags#throw	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#throw(message)$/;"	f
+gutentags#toggletrace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#toggletrace(...)$/;"	f
+gutentags#trace	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#trace(message, ...)$/;"	f
+gutentags#validate_cmd	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#validate_cmd(cmd) abort$/;"	f
+gutentags#warning	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#warning(message)$/;"	f
+gutentags_detect	.vim/bundle/vim-gutentags/plugin/gutentags.vim	/^augroup gutentags_detect$/;"	a
+pathogen#cycle_filetype	.vim/autoload/pathogen.vim	/^function! pathogen#cycle_filetype() abort$/;"	f
+pathogen#execute	.vim/autoload/pathogen.vim	/^function! pathogen#execute(...) abort$/;"	f
+pathogen#expand	.vim/autoload/pathogen.vim	/^function! pathogen#expand(pattern, ...) abort$/;"	f
+pathogen#fnameescape	.vim/autoload/pathogen.vim	/^function! pathogen#fnameescape(string) abort$/;"	f
+pathogen#glob	.vim/autoload/pathogen.vim	/^function! pathogen#glob(pattern) abort$/;"	f
+pathogen#glob_directories	.vim/autoload/pathogen.vim	/^function! pathogen#glob_directories(pattern) abort$/;"	f
+pathogen#helptags	.vim/autoload/pathogen.vim	/^function! pathogen#helptags() abort$/;"	f
+pathogen#infect	.vim/autoload/pathogen.vim	/^function! pathogen#infect(...) abort$/;"	f
+pathogen#interpose	.vim/autoload/pathogen.vim	/^function! pathogen#interpose(name) abort$/;"	f
+pathogen#is_absolute	.vim/autoload/pathogen.vim	/^function! pathogen#is_absolute(path) abort$/;"	f
+pathogen#is_disabled	.vim/autoload/pathogen.vim	/^function! pathogen#is_disabled(path) abort$/;"	f
+pathogen#join	.vim/autoload/pathogen.vim	/^function! pathogen#join(...) abort$/;"	f
+pathogen#legacyjoin	.vim/autoload/pathogen.vim	/^function! pathogen#legacyjoin(...) abort$/;"	f
+pathogen#runtime_findfile	.vim/autoload/pathogen.vim	/^function! pathogen#runtime_findfile(file,count) abort$/;"	f
+pathogen#separator	.vim/autoload/pathogen.vim	/^function! pathogen#separator() abort$/;"	f
+pathogen#slash	.vim/autoload/pathogen.vim	/^function! pathogen#slash() abort$/;"	f
+pathogen#split	.vim/autoload/pathogen.vim	/^function! pathogen#split(path) abort$/;"	f
+pathogen#surround	.vim/autoload/pathogen.vim	/^function! pathogen#surround(path) abort$/;"	f
+pathogen#uniq	.vim/autoload/pathogen.vim	/^function! pathogen#uniq(list) abort$/;"	f
+q	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> q    :<C-U>echoerr "fugitive: q is removed in favor of gq (or/;"	m
+q	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^      nnoremap <buffer> <silent> q :<C-U>echoerr "fugitive: q is removed in favor of gq (or :q)"/;"	m
+q	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> q :<C-U>echoerr "fugitive: q removed in favor of gq (or :q)"<CR>$/;"	m
+s:AddHeader	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:AddHeader(key, value) abort$/;"	f
+s:AddSection	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:AddSection(label, lines, ...) abort$/;"	f
+s:ArgSplit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ArgSplit(string) abort$/;"	f
+s:AskPassArgs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:AskPassArgs(dir) abort$/;"	f
+s:BlameBufnr	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameBufnr(...) abort$/;"	f
+s:BlameCommit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameCommit(cmd, ...) abort$/;"	f
+s:BlameCommitFileLnum	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameCommitFileLnum(...) abort$/;"	f
+s:BlameJump	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameJump(suffix, ...) abort$/;"	f
+s:BlameLeave	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameLeave() abort$/;"	f
+s:BlameQuit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameQuit() abort$/;"	f
+s:BlameRehighlight	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameRehighlight() abort$/;"	f
+s:BlameSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlameSubcommand(line1, count, range, bang, mods, options) abort$/;"	f
+s:BlobTemp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlobTemp(url) abort$/;"	f
+s:BlurStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BlurStatus() abort$/;"	f
+s:BranchCfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BranchCfile(result) abort$/;"	f
+s:BrowserOpen	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BrowserOpen(url, mods, echo_copy) abort$/;"	f
+s:BufName	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BufName(var) abort$/;"	f
+s:BuildEnvPrefix	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BuildEnvPrefix(env) abort$/;"	f
+s:BuildShell	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:BuildShell(dir, env, git, args) abort$/;"	f
+s:CeilingDirectories	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! s:CeilingDirectories() abort$/;"	f
+s:CfilePorcelain	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CfilePorcelain(...) abort$/;"	f
+s:ChompDefault	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ChompDefault(default, ...) abort$/;"	f
+s:ChompStderr	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ChompStderr(...) abort$/;"	f
+s:CommitInteractive	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CommitInteractive(line1, line2, range, bang, mods, options, patch) abort$/;"	f
+s:CommitSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CommitSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:CompletableSubcommands	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CompletableSubcommands(dir) abort$/;"	f
+s:CompleteHeads	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CompleteHeads(dir) abort$/;"	f
+s:CompletePush	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CompletePush(A, L, P, ...) abort$/;"	f
+s:CompleteRemote	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CompleteRemote(A, L, P, ...) abort$/;"	f
+s:CompleteRevision	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CompleteRevision(A, L, P, ...) abort$/;"	f
+s:CompleteSub	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CompleteSub(subcommand, A, L, P, ...) abort$/;"	f
+s:ConfigCallback	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ConfigCallback(r, into) abort$/;"	f
+s:ConfigLengthSort	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ConfigLengthSort(i1, i2) abort$/;"	f
+s:ConfigTimestamps	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ConfigTimestamps(dir, dict) abort$/;"	f
+s:ContainingCommit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ContainingCommit() abort$/;"	f
+s:CurlResponse	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:CurlResponse(result) abort$/;"	f
+s:DiffModifier	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DiffModifier(count, default) abort$/;"	f
+s:DifftoolSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DifftoolSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:Dir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Dir(...) abort$/;"	f
+s:DirCheck	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DirCheck(...) abort$/;"	f
+s:DirCommitFile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DirCommitFile(path) abort$/;"	f
+s:DirRev	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DirRev(url) abort$/;"	f
+s:DirUrlPrefix	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DirUrlPrefix(...) abort$/;"	f
+s:Do	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Do(action, visual) abort$/;"	f
+s:DoAutocmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoAutocmd(...) abort$/;"	f
+s:DoAutocmdChanged	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoAutocmdChanged(dir) abort$/;"	f
+s:DoStagePushHeader	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStagePushHeader(value) abort$/;"	f
+s:DoStageUnpushed	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStageUnpushed(record) abort$/;"	f
+s:DoStageUnpushedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStageUnpushedHeading(heading) abort$/;"	f
+s:DoStageUnstaged	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStageUnstaged(record) abort$/;"	f
+s:DoStageUnstagedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStageUnstagedHeading(heading) abort$/;"	f
+s:DoStageUntracked	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStageUntracked(record) abort$/;"	f
+s:DoStageUntrackedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoStageUntrackedHeading(heading) abort$/;"	f
+s:DoToggleHeadHeader	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleHeadHeader(value) abort$/;"	f
+s:DoToggleHelpHeader	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleHelpHeader(value) abort$/;"	f
+s:DoTogglePushHeader	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoTogglePushHeader(value) abort$/;"	f
+s:DoToggleStaged	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleStaged(record) abort$/;"	f
+s:DoToggleStagedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleStagedHeading(...) abort$/;"	f
+s:DoToggleUnpulled	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUnpulled(record) abort$/;"	f
+s:DoToggleUnpulledHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUnpulledHeading(heading) abort$/;"	f
+s:DoToggleUnpushed	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUnpushed(record) abort$/;"	f
+s:DoToggleUnpushedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUnpushedHeading(heading) abort$/;"	f
+s:DoToggleUnstaged	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUnstaged(record) abort$/;"	f
+s:DoToggleUnstagedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUnstagedHeading(...) abort$/;"	f
+s:DoToggleUntracked	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUntracked(record) abort$/;"	f
+s:DoToggleUntrackedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoToggleUntrackedHeading(...) abort$/;"	f
+s:DoUnstageStaged	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoUnstageStaged(record) abort$/;"	f
+s:DoUnstageStagedHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoUnstageStagedHeading(heading) abort$/;"	f
+s:DoUnstageUnpulled	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoUnstageUnpulled(record) abort$/;"	f
+s:DoUnstageUnpulledHeading	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoUnstageUnpulledHeading(heading) abort$/;"	f
+s:DoUnstageUnpushed	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoUnstageUnpushed(record) abort$/;"	f
+s:DoUnstageUnstaged	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DoUnstageUnstaged(record) abort$/;"	f
+s:DotRelative	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:DotRelative(path, ...) abort$/;"	f
+s:ExecPath	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ExecPath() abort$/;"	f
+s:Expand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Expand(rev, ...) abort$/;"	f
+s:ExpandVar	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ExpandVar(other, var, flags, esc, ...) abort$/;"	f
+s:ExpandVarLegacy	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ExpandVarLegacy(str) abort$/;"	f
+s:ExpireStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ExpireStatus(bufnr) abort$/;"	f
+s:FetchSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:FetchSubcommand(...) abort$/;"	f
+s:FileIgnoreCase	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:FileIgnoreCase(for_completion) abort$/;"	f
+s:FilterEscape	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:FilterEscape(items, ...) abort$/;"	f
+s:Format	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Format(val) abort$/;"	f
+s:FormatFile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:FormatFile(dict) abort$/;"	f
+s:FormatLog	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:FormatLog(dict) abort$/;"	f
+s:FormatRebase	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:FormatRebase(dict) abort$/;"	f
+s:GF	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GF(mode) abort$/;"	f
+s:Generate	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Generate(object, ...) abort$/;"	f
+s:GitCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GitCmd() abort$/;"	f
+s:GitDir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GitDir(...) abort$/;"	f
+s:GitShellCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GitShellCmd() abort$/;"	f
+s:GlobComplete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GlobComplete(lead, pattern, ...) abort$/;"	f
+s:GrepCfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GrepCfile(result) abort$/;"	f
+s:GrepOptions	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GrepOptions(args, dir) abort$/;"	f
+s:GrepParseLine	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GrepParseLine(options, quiet, dir, line) abort$/;"	f
+s:GrepSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:GrepSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:HasOpt	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:HasOpt(args, ...) abort$/;"	f
+s:IsConflicted	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:IsConflicted() abort$/;"	f
+s:JobExecute	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:JobExecute(argv, jopts, stdin, callback, ...) abort$/;"	f
+s:JobNvimCallback	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:JobNvimCallback(lines, job, data, type) abort$/;"	f
+s:JobNvimExit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:JobNvimExit(dict, callback, job, data, type) dict abort$/;"	f
+s:JobOpts	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:JobOpts(cmd, env) abort$/;"	f
+s:JobVimExit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:JobVimExit(dict, callback, temp, job, status) abort$/;"	f
+s:JoinChomp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:JoinChomp(list) abort$/;"	f
+s:Keywordprg	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Keywordprg() abort$/;"	f
+s:LinesError	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:LinesError(...) abort$/;"	f
+s:LogFlushQueue	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:LogFlushQueue(state, dir) abort$/;"	f
+s:LogParse	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:LogParse(state, dir, prefix, line) abort$/;"	f
+s:Map	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Map(mode, lhs, rhs, ...) abort$/;"	f
+s:Map	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! s:Map(mode, lhs, rhs, ...) abort$/;"	f
+s:MapMotion	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:MapMotion(lhs, rhs) abort$/;"	f
+s:MergeHead	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:MergeHead(dir) abort$/;"	f
+s:MergeSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:MergeSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:MergetoolSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:MergetoolSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:Mods	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Mods(mods, ...) abort$/;"	f
+s:Move	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Move(force, rename, destination) abort$/;"	f
+s:NavigateUp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NavigateUp(count) abort$/;"	f
+s:NextExpandedHunk	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NextExpandedHunk(count) abort$/;"	f
+s:NextFile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NextFile(count) abort$/;"	f
+s:NextHunk	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NextHunk(count) abort$/;"	f
+s:NextItem	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NextItem(count) abort$/;"	f
+s:NextSection	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NextSection(count) abort$/;"	f
+s:NextSectionEnd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NextSectionEnd(count) abort$/;"	f
+s:NullError	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:NullError(cmd) abort$/;"	f
+s:OpenParse	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:OpenParse(string, wants_cmd) abort$/;"	f
+s:Owner	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Owner(path, ...) abort$/;"	f
+s:PatchSearchExpr	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PatchSearchExpr(reverse) abort$/;"	f
+s:PathInfo	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PathInfo(url) abort$/;"	f
+s:PrepareEnv	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PrepareEnv(env, dir) abort$/;"	f
+s:PrepareJob	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PrepareJob(opts) abort$/;"	f
+s:PreparePathArgs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PreparePathArgs(cmd, dir, literal, explicit) abort$/;"	f
+s:PreviousFile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PreviousFile(count) abort$/;"	f
+s:PreviousHunk	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PreviousHunk(count) abort$/;"	f
+s:PreviousItem	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PreviousItem(count) abort$/;"	f
+s:PreviousSection	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PreviousSection(count) abort$/;"	f
+s:PreviousSectionEnd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PreviousSectionEnd(count) abort$/;"	f
+s:ProjectionistDetect	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! s:ProjectionistDetect() abort$/;"	f
+s:PushSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:PushSubcommand(...) abort$/;"	f
+s:QueryLog	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:QueryLog(refspec) abort$/;"	f
+s:QuickfixCreate	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:QuickfixCreate(nr, opts) abort$/;"	f
+s:QuickfixGet	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:QuickfixGet(nr, ...) abort$/;"	f
+s:QuickfixSet	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:QuickfixSet(nr, ...) abort$/;"	f
+s:QuickfixStream	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:QuickfixStream(nr, event, title, cmd, first, mods, callback, ...) abort$/;"	f
+s:ReadPrepare	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ReadPrepare(line1, count, range, mods) abort$/;"	f
+s:RebaseArgument	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RebaseArgument() abort$/;"	f
+s:RebaseSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RebaseSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:Relative	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Relative(...) abort$/;"	f
+s:ReloadStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ReloadStatus(...) abort$/;"	f
+s:ReloadStatusBuffer	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ReloadStatusBuffer(...) abort$/;"	f
+s:ReloadTabStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ReloadTabStatus(...) abort$/;"	f
+s:ReloadWinStatus	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ReloadWinStatus(...) abort$/;"	f
+s:Remote	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Remote(dir) abort$/;"	f
+s:Remove	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Remove(after, force) abort$/;"	f
+s:ReplaceCmd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ReplaceCmd(cmd) abort$/;"	f
+s:Resolve	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Resolve(path) abort$/;"	f
+s:RevertSubcommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RevertSubcommand(line1, line2, range, bang, mods, options) abort$/;"	f
+s:RunBufDelete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunBufDelete(bufnr) abort$/;"	f
+s:RunClose	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunClose(state, tmp, job, ...) abort$/;"	f
+s:RunCloseIn	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunCloseIn(job) abort$/;"	f
+s:RunEcho	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunEcho(tmp) abort$/;"	f
+s:RunEdit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunEdit(state, tmp, job) abort$/;"	f
+s:RunExit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunExit(state, tmp, job, exit_status) abort$/;"	f
+s:RunFinished	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunFinished(state, ...) abort$/;"	f
+s:RunReceive	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunReceive(state, tmp, type, job, data, ...) abort$/;"	f
+s:RunSave	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunSave(state) abort$/;"	f
+s:RunSend	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunSend(job, str) abort$/;"	f
+s:RunTick	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunTick(job) abort$/;"	f
+s:RunWait	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:RunWait(state, tmp, job, ...) abort$/;"	f
+s:Selection	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Selection(arg1, ...) abort$/;"	f
+s:Slash	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  function! s:Slash(path) abort$/;"	f
+s:Slash	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^  function! s:Slash(path) abort$/;"	f
+s:SplitExpandChain	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SplitExpandChain(string, ...) abort$/;"	f
+s:SquashArgument	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SquashArgument(...) abort$/;"	f
+s:SshParseConfig	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SshParseConfig(into, root, file, ...) abort$/;"	f
+s:SshParseHost	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SshParseHost(value) abort$/;"	f
+s:SshParseInclude	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SshParseInclude(into, root, host, value) abort$/;"	f
+s:StageApply	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageApply(info, reverse, extra) abort$/;"	f
+s:StageArgs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageArgs(visual) abort$/;"	f
+s:StageDelete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageDelete(lnum1, lnum2, count) abort$/;"	f
+s:StageDiff	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageDiff(diff) abort$/;"	f
+s:StageDiffEdit	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageDiffEdit() abort$/;"	f
+s:StageIgnore	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageIgnore(lnum1, lnum2, count) abort$/;"	f
+s:StageInfo	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageInfo(...) abort$/;"	f
+s:StageInline	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageInline(mode, ...) abort$/;"	f
+s:StageJump	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageJump(offset, section, ...) abort$/;"	f
+s:StagePatch	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StagePatch(lnum1,lnum2) abort$/;"	f
+s:StageReveal	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageReveal() abort$/;"	f
+s:StageSeek	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StageSeek(info, fallback) abort$/;"	f
+s:StatusCfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StatusCfile(...) abort$/;"	f
+s:StatusCommand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StatusCommand(line1, line2, range, count, bang, mods, reg, arg, args, ...) abort$/;"	f
+s:StdoutToFile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:StdoutToFile(out, cmd, ...) abort$/;"	f
+s:SystemError	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SystemError(cmd, ...) abort$/;"	f
+s:SystemList	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:SystemList(cmd) abort$/;"	f
+s:TempDelete	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TempDelete(file) abort$/;"	f
+s:TempDotMap	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TempDotMap() abort$/;"	f
+s:TempReadPost	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TempReadPost(file) abort$/;"	f
+s:TempReadPre	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TempReadPre(file) abort$/;"	f
+s:TempScript	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TempScript(...) abort$/;"	f
+s:TempState	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TempState(...) abort$/;"	f
+s:ToolItems	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ToolItems(state, from, to, offsets, text, ...) abort$/;"	f
+s:ToolParse	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ToolParse(state, line) abort$/;"	f
+s:ToolStream	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ToolStream(line1, line2, range, bang, mods, options, args, state) abort$/;"	f
+s:ToolToFrom	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:ToolToFrom(str) abort$/;"	f
+s:Tree	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Tree(...) abort$/;"	f
+s:Tree	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^function! s:Tree(path) abort$/;"	f
+s:TreeChomp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TreeChomp(...) abort$/;"	f
+s:TreeInfo	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:TreeInfo(dir, commit) abort$/;"	f
+s:Uniq	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:Uniq(list) abort$/;"	f
+s:UpdateIndex	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:UpdateIndex(dir, info) abort$/;"	f
+s:UsableWin	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:UsableWin(nr) abort$/;"	f
+s:UserCommandCwd	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:UserCommandCwd(dir) abort$/;"	f
+s:UserCommandList	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:UserCommandList(...) abort$/;"	f
+s:VersionCheck	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:VersionCheck() abort$/;"	f
+s:WinShellEsc	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:WinShellEsc(arg) abort$/;"	f
+s:_handleOldOptions	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
+s:add_db	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
+s:add_methods	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:add_methods(namespace, method_names) abort$/;"	f
+s:added_db_files	.vim/bundle/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
+s:added_dbs	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
+s:addr_other	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:addr_other = has('patch-8.1.560') || has('nvim-0.5.0') ? '-addr=other' : ''$/;"	v
+s:addr_tabs	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:addr_tabs  = has('patch-7.4.542') ? '-addr=tabs' : ''$/;"	v
+s:addr_wins	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:addr_wins  = has('patch-7.4.542') ? '-addr=windows' : ''$/;"	v
+s:bad_git_dir	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:bad_git_dir = '\/$\\|^fugitive:'$/;"	v
+s:bang_edits	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:bang_edits = {'split': 'Git', 'vsplit': 'vertical Git', 'tabedit': 'tab Git', 'pedit': 'Gi/;"	v
+s:blobdirs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:blobdirs = {}$/;"	v
+s:buffer_prototype	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:buffer_prototype = {}$/;"	v
+s:buffer_repo	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:buffer_repo() dict abort$/;"	f
+s:buffer_type	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:buffer_type(...) dict abort$/;"	f
+s:cache_project_root	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
+s:can_diffoff	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:can_diffoff(buf) abort$/;"	f
+s:cfile	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:cfile() abort$/;"	f
+s:commondirs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:commondirs = {}$/;"	v
+s:config	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:config = {}$/;"	v
+s:config_Get	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:config_Get(name, ...) dict abort$/;"	f
+s:config_GetAll	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:config_GetAll(name) dict abort$/;"	f
+s:config_GetRegexp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:config_GetRegexp(pattern) dict abort$/;"	f
+s:config_prototype	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:config_prototype = {}$/;"	v
+s:cpath	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:cpath(path, ...) abort$/;"	f
+s:did_check_exe	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
+s:diff_restore	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diff_restore() abort$/;"	f
+s:diff_window_count	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diff_window_count() abort$/;"	f
+s:diffoff	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diffoff() abort$/;"	f
+s:diffoff_all	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diffoff_all(dir) abort$/;"	f
+s:diffthis	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:diffthis() abort$/;"	f
+s:dir_for_worktree	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:dir_for_worktree = {}$/;"	v
+s:disable_colors	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:disable_colors = []$/;"	v
+s:done_bundles	.vim/autoload/pathogen.vim	/^let s:done_bundles = {}$/;"	v
+s:edit_jobs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:edit_jobs = {}$/;"	v
+s:exec_paths	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:exec_paths = {}$/;"	v
+s:executable	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:executable(binary) abort$/;"	f
+s:executables	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:executables = {}$/;"	v
+s:expand	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:expand = '\\%(\\(' . s:var . '\\)\\(' . s:flag . '*\\)\\(:S\\)\\=\\)'$/;"	v
+s:file_commit_pattern	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:file_commit_pattern = s:file_pattern . '\\|^\\%(\\l\\{3,\\} \\)\\=[0-9a-f]\\{4,\\} '$/;"	v
+s:file_pattern	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:file_pattern = '^[A-Z?] .\\|^diff --'$/;"	v
+s:flag	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:flag = '\\%(:[p8~.htre]\\|:g\\=s\\(.\\).\\{-\\}\\1.\\{-\\}\\1\\)'$/;"	v
+s:fnameescape	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:fnameescape(file) abort$/;"	f
+s:fnameescape	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:fnameescape = " \\t\\n*?[{`$\\\\%#'\\"|!<"$/;"	v
+s:function	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:function(name) abort$/;"	f
+s:generate_wildignore_options	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
+s:get_ctags_executable	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:get_ctags_executable(proj_dir) abort$/;"	f
+s:git_versions	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:git_versions = {}$/;"	v
+s:globsubs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:globsubs = {$/;"	v
+s:grep_combine_flags	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:grep_combine_flags = '[aiIrhHEGPFnlLzocpWq]\\{-\\}'$/;"	v
+s:gsub	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:gsub(str,pat,rep) abort$/;"	f
+s:hash_colors	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:hash_colors = {}$/;"	v
+s:head_cache	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:head_cache = {}$/;"	v
+s:indexes	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:indexes = {}$/;"	v
+s:item_pattern	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:item_pattern = s:file_commit_pattern . '\\|^@@'$/;"	v
+s:known_files	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^let s:known_files = []$/;"	v
+s:known_projects	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
+s:last_time	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:last_time = reltime()$/;"	v
+s:last_times	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:last_times = {}$/;"	v
+s:last_wildignores	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
+s:linechars	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:linechars(pattern) abort$/;"	f
+s:log_diff_context	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:log_diff_context = '{"filename": fugitive#Find(v:val . from, a:dir), "lnum": get(offsets, /;"	v
+s:manual_update_tags	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! s:manual_update_tags(bang) abort$/;"	f
+s:merge_heads	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:merge_heads = ['MERGE_HEAD', 'REBASE_HEAD', 'CHERRY_PICK_HEAD', 'REVERT_HEAD']$/;"	v
+s:nowait	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
+s:nowait	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:nowait = v:version >= 704 ? '<nowait>' : ''$/;"	v
+s:nvim_job_exit_wrapper	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_exit_wrapper(real_cb, job, exit_code, event_type) abort$/;"	f
+s:nvim_job_out_wrapper	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_out_wrapper(real_cb, job, lines, event_type) abort$/;"	f
+s:path_subcommands	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:path_subcommands = {}$/;"	v
+s:prepare_env	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:prepare_env = {$/;"	v
+s:process_options_file	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:process_options_file(proj_dir, path) abort$/;"	f
+s:rebase_abbrevs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:rebase_abbrevs = {$/;"	v
+s:ref_header	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:ref_header = '\\%(Merge\\|Rebase\\|Upstream\\|Pull\\|Push\\)'$/;"	v
+s:remote_headers	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:remote_headers = {}$/;"	v
+s:repo_bare	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_bare() dict abort$/;"	f
+s:repo_config	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_config(name) dict abort$/;"	f
+s:repo_dir	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_dir(...) dict abort$/;"	f
+s:repo_find	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_find(object) dict abort$/;"	f
+s:repo_git_chomp	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_git_chomp(...) dict abort$/;"	f
+s:repo_git_chomp_in_tree	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_git_chomp_in_tree(...) dict abort$/;"	f
+s:repo_git_command	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_git_command(...) dict abort$/;"	f
+s:repo_head	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_head(...) dict abort$/;"	f
+s:repo_prototype	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:repo_prototype = {}$/;"	v
+s:repo_rev_parse	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_rev_parse(rev) dict abort$/;"	f
+s:repo_superglob	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_superglob(base) dict abort$/;"	f
+s:repo_translate	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_translate(rev) dict abort$/;"	f
+s:repo_tree	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_tree(...) dict abort$/;"	f
+s:repo_user	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:repo_user() dict abort$/;"	f
+s:repos	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:repos = {}$/;"	v
+s:resume_queue	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:resume_queue = []$/;"	v
+s:run_jobs	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:run_jobs = (exists('*job_start') || exists('*jobstart')) && exists('*bufwinid')$/;"	v
+s:runner_exe	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_scopedb')$/;"	v
+s:runner_exe	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:runner_exe = '"' . gutentags#get_plat_file('update_tags') . '"'$/;"	v
+s:section_commit_pattern	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:section_commit_pattern = s:section_pattern . '\\|^commit '$/;"	v
+s:section_pattern	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:section_pattern = '^[A-Z][a-z][^:]*$'$/;"	v
+s:shellesc	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:shellesc(arg) abort$/;"	f
+s:sub	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:sub(str,pat,rep) abort$/;"	f
+s:subcommands_before_2_5	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:subcommands_before_2_5 = [$/;"	v
+s:temp_files	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_files = {}$/;"	v
+s:temp_scripts	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^  let s:temp_scripts = {}$/;"	v
+s:throw	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:throw(string) abort$/;"	f
+s:trees	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:trees = {}$/;"	v
+s:unix_redir	.vim/bundle/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unix_redir	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:update_in_progress	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    let s:update_in_progress[module] = []$/;"	v
+s:update_in_progress	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^let s:update_in_progress = {}$/;"	v
+s:update_queue	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^    let s:update_queue[module] = []$/;"	v
+s:update_queue	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^let s:update_queue = {}$/;"	v
+s:update_tags	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! s:update_tags(bufno, module, write_mode, queue_mode) abort$/;"	f
+s:var	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:var = '\\%(<\\%(cword\\|cWORD\\|cexpr\\|cfile\\|sfile\\|slnum\\|afile\\|abuf\\|amatch' . (/;"	v
+s:wildignores_options_path	.vim/bundle/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:wildignores_options_path = ''$/;"	v
+s:winshell	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^function! s:winshell() abort$/;"	f
+s:worktree_error	.vim/pack/tpope/start/fugitive/autoload/fugitive.vim	/^let s:worktree_error = "core.worktree is required when using an external Git dir"$/;"	v
+s:worktree_for_dir	.vim/pack/tpope/start/fugitive/plugin/fugitive.vim	/^let s:worktree_for_dir = {}$/;"	v
+s:write_triggered_update_tags	.vim/bundle/vim-gutentags/autoload/gutentags.vim	/^function! s:write_triggered_update_tags(bufno) abort$/;"	f
+use_raw_list	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        if ["%FILE_LIST_CMD_IS_ABSOLUTE%"]==["1"] set use_raw_list=1$/;"	v
+use_raw_list	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        if ["%PROJECT_ROOT%"]==["."] set use_raw_list=1$/;"	v
+use_raw_list	.vim/bundle/vim-gutentags/plat/win32/update_tags.cmd	/^        set use_raw_list=0$/;"	v

@@ -1,0 +1,9 @@
+[user]
+	email = timothee.denizou@epita.fr
+	name = tim-tim707
+[core]
+	editor = vim
+[alias]
+	fetch = fetch --all
+	pushd = push -u origin HEAD
+	lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

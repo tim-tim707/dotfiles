@@ -1,9 +1,36 @@
-[user]
-	email = timothee.denizou@epita.fr
-	name = tim-tim707
 [core]
-	editor = vim
+    editor = vim
+    excludesfile = ~/.gitignore
+
+[commit]
+    verbose = true
+[pull]
+    rebase = true
+[branch]
+    autosetuprebase = always
+[push]
+    default = simple
+[rebase]
+    autoSquash = true
+    autoStash = true
+
+[user]
+    email = timothee.denizou@epita.fr
+    name = Timothee Denizou
 [alias]
-	fetch = fetch --all
-	pushd = push -u origin HEAD
-	lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    fetch = fetch --all
+    pushd = push -u origin HEAD
+    lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+
+[sendemail]
+    smtpencryption = tls
+    smtpserver = smtp.office365.com
+    smtpserverport = 587
+    smtpuser = timothee.denizou@epita.fr

@@ -73,6 +73,9 @@ set statusline+=\
 "Miscellaneous"
 set noswapfile
 set path+=**
+set autoread
+set autowrite
+autocmd FocusGained,BufEnter * :checktime
 
 "disable automatic comment insertion when using o/O"
 autocmd FileType * setlocal formatoptions-=o
@@ -80,6 +83,11 @@ autocmd FileType * setlocal formatoptions-=o
 "
 " Remappings
 "
+
+let mapleader = "\<Space>"
+
+nnoremap <Leader>cf :call utils#CreateFunctionFromDefinition()<CR>
+nnoremap <Leader>ch :call utils#CreateHeaderAndSrc()<CR>
 
 "Map arrows to window resize"
 nnoremap <LEFT> <C-w>5<
@@ -102,11 +110,17 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 "Auto indent"
 noremap <F7> gg=G<C-o><C-o>
 
-" Move lines with Shift UP/DOWN arrows
-nnoremap <S-UP> :m .-2<CR>
-nnoremap <S-DOWN> :m .+1<CR>
+" Move lines with Shift UP/DOWN arrows on xterm
+if ($TERM =~? 'xterm')
+    nnoremap <S-UP> :m .-2<CR>
+    nnoremap <S-DOWN> :m .+1<CR>
+endif
 
-"
+" quick save on CTR-S
+if ($TERM =~? 'rxvt')
+    nnoremap <C-S> :wa<CR>
+endif
+
 " File Type local options
 "
 

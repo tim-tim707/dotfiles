@@ -9,7 +9,7 @@ colorscheme corporation_modified
 "
 " Plugins
 "
-
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 
 "
 " Settings

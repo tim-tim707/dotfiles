@@ -1,4 +1,9 @@
-execute pathogen#infect()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 filetype plugin indent on
 syntax on
 set t_Co=256
@@ -9,8 +14,19 @@ colorscheme corporation_modified
 "
 " Plugins
 "
-let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+call plug#begin('~/.vim/plugged')
 
+source $HOME/.vim/plugged/utils.vim
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'ludovicchabant/vim-gutentags'
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+let g:gutentags_project_root = ['Makefile']
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'vim-utils/vim-man'
+call plug#end()
 "
 " Settings
 "

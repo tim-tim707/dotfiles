@@ -18,7 +18,7 @@ function utils#CreateHeaderAndSrc()
             \"",
             \"",
             \"",
-            \"#endif",
+            \"#endif /*" . toupper(l:basename) . "_H */",
         \],
         \l:basename . ".h",
         \"a"

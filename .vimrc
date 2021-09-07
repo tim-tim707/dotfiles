@@ -26,6 +26,7 @@ let g:gutentags_project_root = ['Makefile']
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-utils/vim-man'
+noremap <leader><S-M> <Plug>(Vman)
 call plug#end()
 "
 " Settings

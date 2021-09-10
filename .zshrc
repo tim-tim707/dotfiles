@@ -61,6 +61,7 @@ DISABLE_AUTO_TITLE="true"
 plugins=(
 git
 zsh-autosuggestions
+colored-man-pages
 )
 
 # User configuration

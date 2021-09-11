@@ -12,6 +12,7 @@ fi
 export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
+setxkmap -option caps:escape
 
 alias la='ls -a --color=auto'
 alias l='l -la --color=auto'

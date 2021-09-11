@@ -14,3 +14,11 @@ for f in $custom_dotfiles; do
   rm -rf "$HOME/$f"
   ln -s "$AFS_DIR/dotfiles/$f" "$HOME/$f"
 done
+
+if ! [[ -x $"(command -v home-manager)" ]]; then
+    nix-channel --add
+    https://github.com/nix-community/home-manager/archive/release-21.05.tar.gz home-manager
+    nix-channel --update
+    export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
+    nix-shell '<home-manager>' -A install
+fi

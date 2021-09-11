@@ -15,6 +15,7 @@ export EDITOR=vim
 
 alias la='ls -a --color=auto'
 alias l='l -la --color=auto'
+alias mkdir='mkdir -p'
 
 function mkcd() {
     mkdir $1 && cd $1

@@ -13,4 +13,11 @@ export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 
+alias la='ls -a --color=auto'
+alias l='l -la --color=auto'
+
+function mkcd() {
+    mkdir $1 && cd $1
+}
+
 PS1="\e[1;32m \w ~>\e[m "

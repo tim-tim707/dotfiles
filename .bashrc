@@ -13,4 +13,4 @@ export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 
-PS1="\e[1;32m\u ~>\e[m "
+PS1="\e[1;32m \w ~>\e[m "

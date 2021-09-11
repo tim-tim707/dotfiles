@@ -18,9 +18,10 @@
     email = timothee.denizou@epita.fr
     name = Timothee Denizou
 [alias]
+    c = commit -m
     fetch = fetch --all
     pushd = push -u origin HEAD
-    lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    l = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [color]
     ui = true

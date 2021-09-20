@@ -126,6 +126,9 @@ alias ls='ls --color=auto'
 alias la='ls --color=auto -a'
 alias ll='ls --color=auto -alF'
 
+function cd() {
+    builtin cd $1 && ls
+}
 function mkcd() {
     mkdir $1 && cd $1
 }

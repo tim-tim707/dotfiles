@@ -29,3 +29,12 @@ function cd() {
 PS1="\[\e[1;32m\] \w ~> \[\e[m\]"
 
 LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
+
+bind '"\eOd": backward-word'
+bind '"\eOc": forward-word'
+
+set colored-stats On
+set completion-ignore-case On
+set mark-symlinked-directories On
+set show-all-if-ambiguous On
+set show-all-if-unmodified On

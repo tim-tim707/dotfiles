@@ -23,3 +23,5 @@ function mkcd() {
 }
 
 PS1="\[\e[1;32m\] \w ~> \[\e[m\]"
+
+LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS

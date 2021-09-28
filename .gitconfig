@@ -19,9 +19,11 @@
     name = Timothee Denizou
 [alias]
     c = commit -m
+    p = push
     fetch = fetch --all
     pushd = push -u origin HEAD
     l = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    act = !sh -c 'git add $1 && git commit -m $2 && git tag $2' -
 
 [color]
     ui = true

@@ -2,13 +2,15 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/timothee_denizou/.oh-my-zsh"
@@ -59,9 +61,10 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-git
-zsh-autosuggestions
-colored-man-pages
+    nix-shell
+    git
+    zsh-autosuggestions
+    colored-man-pages
 )
 
 # User configuration
@@ -72,14 +75,14 @@ compinit
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
-                                 /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
-#completion cache
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh_cache
-#colors
-zmodload zsh/complist
-setopt extendedglob
-zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
+    /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
+    #completion cache
+    zstyle ':completion:*' use-cache on
+    zstyle ':completion:*' cache-path ~/.zsh_cache
+    #colors
+    zmodload zsh/complist
+    setopt extendedglob
+    zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
 
 # setopt correctall
 

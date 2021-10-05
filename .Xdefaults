@@ -1,0 +1,37 @@
+*utf8: always
+Xft.antialias: true
+
+URxvt.letterSpace: 0.8
+urxvt.font: xft:FiraCode Nerd Font:pixelsize=11:style=Medium
+
+*.foreground: #dde9ed
+URxvt*.background: #262626
+*.cursorColor: #ffe9d9
+
+! red
+*.color1: #b31024
+*.color9: #b31024
+
+! green
+*.color2: #00ff00
+*.color10: #00ff00
+
+! yellow
+*.color3: #f4ca40
+*.color11: #f4ca40
+
+! blue
+*.color4: #4a81c3
+*.color12: #4a81c3
+
+! magenta
+*.color5: #ff00ff
+*.color13: #ff00ff
+
+! cyan
+*.color6: #5cd8d5
+*.color14: #00fff9
+
+! white
+*.color7: #fff8e8
+*.color15: #fff8e8

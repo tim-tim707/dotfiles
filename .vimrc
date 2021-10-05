@@ -28,6 +28,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 noremap <leader><S-M> <Plug>(Vman)
 call plug#end()
+
 "
 " Settings
 "
@@ -44,7 +45,7 @@ set list listchars=tab:>-,eol:¬,trail:.,nbsp:¤
 set backspace=eol,indent,start
 
 set showmatch
-set scrolloff=10
+set scrolloff=5
 
 "Cursor visual"
 set cursorline

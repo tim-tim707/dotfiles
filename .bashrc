@@ -13,6 +13,7 @@ export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 setxkbmap -option caps:escape
+xset r rate 250 50
 
 alias la='ls -a --color=auto'
 alias l='l -la --color=auto'
@@ -20,15 +21,15 @@ alias mkdir='mkdir -p'
 alias pi='cd /home/timothee.denizou/afs/timothee.denizou-piscine-2024/'
 alias vi=vim
 
-function mkcd() {
+mkcd() {
     mkdir $1 && cd $1
 }
 
-function cd() {
+cd() {
     builtin cd $1 && ls
 }
 
-function gitac() {
+gitac() {
     if [ "$#" -ne 2 ]; then
         echo "Please provide file to add and commit message"
     else
@@ -36,7 +37,7 @@ function gitac() {
     fi
 }
 
-function gitact() {
+gitact() {
     if [ "$#" -ne 3 ]; then
         echo "Please provide file to add, commit message and tag"
     else

@@ -23,6 +23,10 @@ Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 let g:gutentags_project_root = ['Makefile']
 
+Plug 'rhysd/vim-clang-format'
+let g:clang_format#detect_style_file = 1
+let g:clang_format#auto_format = 1
+
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-utils/vim-man'
@@ -104,7 +108,9 @@ autocmd FileType * setlocal formatoptions-=o
 
 let mapleader = "\<Space>"
 
-nnoremap <Leader>cf :call utils#CreateFunctionFromDefinition()<CR>
+" nnoremap <Leader>cf :call utils#CreateFunctionFromDefinition()<CR>
+nnoremap <Leader>cf :ClangFormat <CR>
+autocmd FileType c ClangFormatAutoEnable
 nnoremap <Leader>ch :call utils#CreateHeaderAndSrc()<CR>
 
 "Map arrows to window resize"
@@ -122,8 +128,6 @@ nnoremap <C-k> :cp<CR>
 "File explorer"
 nnoremap <C-e> :Lex<CR>
 
-nnoremap <C-s> :wa<CR>
-
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
@@ -140,6 +144,11 @@ endif
 if ($TERM =~? 'rxvt')
     nnoremap <C-S> :wa<CR>
 endif
+
+command WQ wq
+command Wq wq
+command W w
+command Q q
 
 " File Type local options
 "

@@ -1,7 +1,7 @@
 *utf8: always
 Xft.antialias: true
 
-URxvt.letterSpace: 0.8
+URxvt.letterSpace: 0.1
 urxvt.font: xft:FiraCode Nerd Font:pixelsize=11:style=Medium
 
 *.foreground: #dde9ed

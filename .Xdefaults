@@ -1,9 +1,12 @@
 *utf8: always
-Xft.antialias: true
 
-URxvt.letterSpace: 0.1
+! Font settings
+Xft.antialias: true
+URxvt.letterSpace: 0.3
 urxvt.font: xft:FiraCode Nerd Font:pixelsize=11:style=Medium
 
+
+! Colors
 *.foreground: #dde9ed
 URxvt*.background: #262626
 *.cursorColor: #ffe9d9

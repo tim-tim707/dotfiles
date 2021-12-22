@@ -16,13 +16,20 @@ colorscheme corporation_modified
 "
 call plug#begin('~/.vim/plugged')
 
+" Quality of life
 source $HOME/.vim/plugged/utils.vim
 Plug 'jiangmiao/auto-pairs'
 
+" Let vim follow symlinks
+Plug 'moll/vim-bbye' " optional dependency
+Plug 'aymericbeaumet/vim-symlink'"
+" Tags
 Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 let g:gutentags_project_root = ['Makefile']
 
+
+" Clang format
 Plug 'rhysd/vim-clang-format'
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
@@ -78,6 +85,11 @@ set softtabstop=-1
 set splitbelow
 set splitright
 set fillchars=vert:│
+
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 "command completion"
 set wildmenu

@@ -4,7 +4,9 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-exec --no-startup-id feh --bg-scale /home/timothee.denizou/afs/asm_lock2.png
+
+# TODO: Check if the exec at the bottom works
+# exec --no-startup-id feh --bg-scale /home/timothee.denizou/afs/asm_lock2.png
 # WARNING
 # WARNING: This configuration file is a template for the i3-config-wizard to
 # WARNING: generate a config which uses keysyms in your current layout. It does
@@ -177,12 +179,18 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# background image
+exec --no-startup-id feh --bg-scale /home/timothee.denizou/afs/asm_lock2.png
+
+# i3lock background and binding
 bindsym $mod+x exec i3lock -i /home/timothee.denizou/afs/asm_lock2.png
+
+# custom settings
 bindsym $mod+f exec firefox
 
 default_border pixel 3
 hide_edge_borders both
-# for_window [class="^.*"] border pixel 1
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

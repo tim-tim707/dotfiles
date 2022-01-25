@@ -68,3 +68,9 @@ set show-all-if-ambiguous On
 set show-all-if-unmodified On
 
 export CFLAGS="-Wall -Wextra -Werror -pedantic -std=c99 -g -fsanitize=address"
+
+alias vscode="nix profile install nixpkgs#vscode.fhs --impure && code ."
+
+export PGDATA=$HOME/postgres_data
+export PGHOST=/tmp
+

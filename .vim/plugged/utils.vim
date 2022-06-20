@@ -59,3 +59,9 @@ function utils#CreateFunctionFromDefinition()
     endif
     execute("wa")
 endfunction
+
+function Clean()
+    set nolist
+    set nonumber
+    set norelativenumber
+endfunction

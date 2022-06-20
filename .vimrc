@@ -33,6 +33,7 @@ let g:gutentags_project_root = ['Makefile']
 Plug 'rhysd/vim-clang-format'
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
+let g:clang_format#command = "clang-format-12"
 
 Plug 'tpope/vim-fugitive'
 
@@ -124,6 +125,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>cf :ClangFormat <CR> :wa <CR>
 autocmd FileType c ClangFormatAutoEnable
 nnoremap <Leader>ch :call utils#CreateHeaderAndSrc()<CR>
+nnoremap <Leader>c :call Clean()<CR>
 
 "Map arrows to window resize"
 nnoremap <LEFT> <C-w>5<

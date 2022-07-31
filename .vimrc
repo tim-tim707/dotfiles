@@ -41,9 +41,15 @@ Plug 'vim-utils/vim-man'
 noremap <leader><S-M> <Plug>(Vman)
 call plug#end()
 
+packadd termdebug
+let g:termdebug_popup = 0
+let g:termdebug_wide = 163
+
 "
 " Settings
 "
+
+set mouse=a
 
 "visual options"
 set number
@@ -53,7 +59,8 @@ set colorcolumn=81
 set linebreak
 set textwidth=80
 set showbreak=+++
-set list listchars=tab:>-,eol:¬,trail:.,nbsp:¤
+" set list listchars=tab:>-,eol:¬,trail:.,nbsp:¤
+set list listchars=tab:>-,trail:.,nbsp:¤
 set backspace=eol,indent,start
 
 set showmatch

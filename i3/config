@@ -59,7 +59,7 @@ bindsym $mod+Shift+q kill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+d exec rofi -show drun -icon-theme "Papirus" -show-icons
+bindsym $mod+d exec rofi -combi-modi run#drun -show combi -icon-theme "Papirus" -show-icons
 
 # change focus
 bindsym $mod+h focus left

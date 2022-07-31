@@ -1,10 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export SSH_AGENT_PID:1356
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXX30o5yZ/agent\x2e1355
-SETUVAR __fish_initialized:3100
+SETUVAR --export SSH_AGENT_PID:835
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXnylGgQ/agent\x2e834
+SETUVAR __fish_initialized:3400
 SETUVAR _fisher_decors_2F_fish_2D_colored_2D_man_files:/home/tim/\x2econfig/fish/functions/man\x2efish
-SETUVAR _fisher_plugins:decors/fish\x2dcolored\x2dman
+SETUVAR _fisher_edc_2F_bass_files:/home/tim/\x2econfig/fish/functions/__bass\x2epy\x1e/home/tim/\x2econfig/fish/functions/bass\x2efish
+SETUVAR _fisher_plugins:decors/fish\x2dcolored\x2dman\x1eedc/bass
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -33,4 +34,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/tim/\x2elocal/bin\x1e/home/tim/go/bin
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/tim/\x2ecargo/bin\x1e/home/tim/\x2elocal/bin\x1e/home/tim/go/bin\x1e/home/tim/\x2eyarn/bin

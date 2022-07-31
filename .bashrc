@@ -74,3 +74,4 @@ alias vscode="nix profile install nixpkgs#vscode.fhs --impure && code ."
 export PGDATA=$HOME/postgres_data
 export PGHOST=/tmp
 
+source /usr/share/nvm/init-nvm.sh

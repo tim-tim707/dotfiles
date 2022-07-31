@@ -39,5 +39,4 @@
     smtpserver = smtp.office365.com
     smtpserverport = 587
     smtpuser = timothee.denizou@epita.fr
-[url "git@github.com:"]
-    insteadOf = https://github.com/
+

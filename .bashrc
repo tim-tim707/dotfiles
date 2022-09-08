@@ -5,15 +5,37 @@ if [ -d ~/afs/bin ] ; then
     export PATH=~afs/bin:$PATH
 fi
 
-if [ -d ~/.local/bin ] ; then
-    export PATH=~/.local/bin:$PATH
+if [ ! -d ~/.local/bin ] ; then
+    mkdir ~/.local/bin
 fi
+export PATH=~/.local/bin:$PATH
+
+HISTCONTROL=ignoreboth # no duplicate line with space at front
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# History length
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# update after window resize
+shopt -s checkwinsize
 
 export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 setxkbmap -option caps:escape
 xset r rate 250 50
+
+# autocompletion features
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
 
 alias la='ls -a --color=auto'
 alias l='l -la --color=auto'
@@ -74,4 +96,6 @@ alias vscode="nix profile install nixpkgs#vscode.fhs --impure && code ."
 export PGDATA=$HOME/postgres_data
 export PGHOST=/tmp
 
-source /usr/share/nvm/init-nvm.sh
+if [ -f /usr/share/nvm/init-nvm.sh ]; then
+    source /usr/share/nvm/init-nvm.sh
+fi

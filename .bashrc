@@ -48,8 +48,10 @@ mkcd() {
     mkdir $1 && cd $1
 }
 
+LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
+
 cd() {
-    builtin cd $1 && ls
+    builtin cd $1 && ls --color=auto
 }
 
 gitac() {
@@ -69,8 +71,6 @@ gitact() {
 }
 
 PS1="\[\e[1;32m\] \w ~> \[\e[m\]"
-
-LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 
 # colored man pages and less
 export LESS_TERMCAP_mb=$'\e[1;32m'

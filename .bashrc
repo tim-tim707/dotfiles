@@ -6,7 +6,7 @@ if [ -d ~/afs/bin ] ; then
 fi
 
 if [ ! -d ~/.local/bin ] ; then
-    mkdir ~/.local/bin
+    mkdir -p ~/.local/bin
 fi
 export PATH=~/.local/bin:$PATH
 
@@ -25,8 +25,9 @@ shopt -s checkwinsize
 export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
-setxkbmap -option caps:escape
-xset r rate 250 50
+
+setxkbmap -option caps:escape 2>/dev/null
+xset r rate 250 50 2>/dev/null
 
 # autocompletion features
 if ! shopt -oq posix; then
@@ -89,12 +90,7 @@ set mark-symlinked-directories On
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 
-export CFLAGS="-Wall -Wextra -Werror -pedantic -std=c99 -g -fsanitize=address"
-
 alias vscode="nix profile install nixpkgs#vscode.fhs --impure && code ."
-
-export PGDATA=$HOME/postgres_data
-export PGHOST=/tmp
 
 if [ -f /usr/share/nvm/init-nvm.sh ]; then
     source /usr/share/nvm/init-nvm.sh

@@ -98,3 +98,9 @@ alias vscode="nix profile install nixpkgs#vscode.fhs --impure && code ."
 if [ -f /usr/share/nvm/init-nvm.sh ]; then
     source /usr/share/nvm/init-nvm.sh
 fi
+
+if [ -n $WSL_DISTRO_NAME ]; then
+    export DISPLAY=$(ip route list default | awk '{print $3}'):0
+    export LIBGL_ALWAYS_INDIRECT=1
+fi
+

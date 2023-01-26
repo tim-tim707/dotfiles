@@ -41,7 +41,10 @@ fi
 alias la='ls -a --color=auto'
 alias l='l -la --color=auto'
 alias mkdir='mkdir -p'
-alias pi='cd /home/timothee.denizou/afs/timothee.denizou-piscine-2024/'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias vi=vim
 
 mkcd() {

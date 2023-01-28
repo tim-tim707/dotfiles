@@ -40,3 +40,5 @@
     smtpserverport = 587
     smtpuser = timothee.denizou@epita.fr
 
+[init]
+	defaultBranch = master

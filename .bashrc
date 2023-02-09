@@ -54,7 +54,7 @@ mkcd() {
 LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 
 cd() {
-    builtin cd $1 && ls --color=auto
+    builtin cd "$1" && ls --color=auto
 }
 
 gitac() {
@@ -104,3 +104,4 @@ if [ -n $WSL_DISTRO_NAME ]; then
     export LIBGL_ALWAYS_INDIRECT=1
 fi
 
+. "$HOME/.cargo/env"

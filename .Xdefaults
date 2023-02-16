@@ -2,8 +2,8 @@
 
 ! Font settings
 Xft.antialias: true
-URxvt.letterSpace: 0.3
-urxvt.font: xft:FiraCode Nerd Font:pixelsize=11:style=Medium
+#URxvt.letterSpace: 0.3
+# urxvt.font: xft:FiraCode Nerd Font:pixelsize=11:style=Medium
 
 
 ! Colors

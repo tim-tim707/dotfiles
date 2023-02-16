@@ -104,4 +104,6 @@ if [ -n $WSL_DISTRO_NAME ]; then
     export LIBGL_ALWAYS_INDIRECT=1
 fi
 
-. "$HOME/.cargo/env"
+if [ -f "$HOME""/.cargo.env" ]; then
+    source "$HOME/.cargo/env"
+fi

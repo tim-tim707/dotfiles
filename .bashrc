@@ -38,6 +38,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias ls='ls --color=auto'
 alias la='ls -a --color=auto'
 alias l='l -la --color=auto'
 alias mkdir='mkdir -p'

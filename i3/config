@@ -183,7 +183,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # background image
-exec --no-startup-id feh --bg-scale $HOME/lockscreen.png
+exec --no-startup-id feh --bg-scale $HOME/images/lockscreen.png
 
 # i3lock background and binding
 bindsym $mod+x exec i3lock --color=404040

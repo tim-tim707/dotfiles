@@ -94,11 +94,6 @@ set splitbelow
 set splitright
 set fillchars=vert:│
 
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
-
 "command completion"
 set wildmenu
 set wildmode=longest:full,list:full
@@ -141,10 +136,10 @@ nnoremap <UP> <C-w>5+
 nnoremap <DOWN> <C-w>5-
 
 "Map to window movement"
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 "Quickfix commands"
 nnoremap <C-m> :wa<CR>:make<CR>:copen<CR><CR>

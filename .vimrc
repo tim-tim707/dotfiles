@@ -113,6 +113,7 @@ set path+=**
 set autoread
 set autowrite
 autocmd FocusGained,BufEnter * :checktime
+set iskeyword-=_
 
 "disable automatic comment insertion when using o/O"
 autocmd FileType * setlocal formatoptions-=o

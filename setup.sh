@@ -1,7 +1,7 @@
 dotfiles=".confs .oh-my-zsh .vim .Xdefaults .bashrc .clang-format .gdbinit .gitconfig .gitignore .vimrc"
 # .zshrc
 
-config_dirs="i3 polybar rofi fish nvim alacritty picom"
+config_dirs="i3 polybar rofi nvim alacritty picom"
 
 for file in $dotfiles
 do

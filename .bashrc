@@ -26,7 +26,11 @@ export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 
+# if [ "$XDG_SESSION_TYPE" != "wayland" ]; then
+setxkbmap -layout "fr"
 setxkbmap -option caps:escape 2>/dev/null
+# fi
+
 xset r rate 250 50 2>/dev/null
 
 # autocompletion features
@@ -100,7 +104,7 @@ if [ -f /usr/share/nvm/init-nvm.sh ]; then
     source /usr/share/nvm/init-nvm.sh
 fi
 
-if [ -n $WSL_DISTRO_NAME ]; then
+if [ -n "$WSL_DISTRO_NAME" ]; then
     export DISPLAY=$(ip route list default | awk '{print $3}'):0
     export LIBGL_ALWAYS_INDIRECT=1
 fi

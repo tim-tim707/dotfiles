@@ -17,14 +17,13 @@ colorscheme corporation_modified
 call plug#begin('~/.vim/plugged')
 
 " Quality of life
-source $HOME/.vim/plugged/utils.vim
 Plug 'jiangmiao/auto-pairs'
 
 " Let vim follow symlinks
 Plug 'moll/vim-bbye' " optional dependency
 Plug 'aymericbeaumet/vim-symlink'"
 " Tags
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 let g:gutentags_project_root = ['Makefile']
 

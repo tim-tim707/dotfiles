@@ -26,10 +26,12 @@ export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 
-# if [ "$XDG_SESSION_TYPE" != "wayland" ]; then
-setxkbmap -layout "fr"
-setxkbmap -option caps:escape 2>/dev/null
-# fi
+if [ "$XDG_SESSION_TYPE" != "wayland" ]; then
+    setxkbmap -layout "fr"
+    setxkbmap -option caps:escape 2>/dev/null
+else
+    # echo "You should use KBOPTIONS=\"caps:swapescape\" in the /etc/default/keyboard file and reboot to use capslock as escape"
+fi
 
 xset r rate 250 50 2>/dev/null
 

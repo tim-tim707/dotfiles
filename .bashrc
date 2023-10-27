@@ -29,7 +29,7 @@ export EDITOR=vim
 if [ "$XDG_SESSION_TYPE" != "wayland" ]; then
     setxkbmap -layout "fr"
     setxkbmap -option caps:escape 2>/dev/null
-else
+# else
     # echo "You should use KBOPTIONS=\"caps:swapescape\" in the /etc/default/keyboard file and reboot to use capslock as escape"
 fi
 

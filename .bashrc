@@ -10,6 +10,10 @@ if [ ! -d ~/.local/bin ] ; then
 fi
 export PATH=~/.local/bin:$PATH
 
+if [ -d /usr/local/cuda-12.3/bin ] ; then
+    export PATH=/usr/local/cuda-12.3/bin:$PATH
+fi
+
 HISTCONTROL=ignoreboth # no duplicate line with space at front
 
 # append to the history file, don't overwrite it

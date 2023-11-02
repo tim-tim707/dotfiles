@@ -1,5 +1,4 @@
-dotfiles=".confs .oh-my-zsh .vim .Xdefaults .bashrc .clang-format .gdbinit .gitconfig .gitignore .vimrc"
-# .zshrc
+dotfiles=".confs .oh-my-zsh .vim .Xdefaults .bashrc .clang-format .gdbinit .gitconfig .gitignore .vimrc .zshrc"
 
 config_dirs="i3 polybar rofi nvim alacritty picom"
 

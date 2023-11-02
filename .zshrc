@@ -2,41 +2,58 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/timothee_denizou/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="robbyrussell"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
-# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -60,49 +77,92 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    nix-shell
-    git
-    zsh-autosuggestions
-    colored-man-pages
-)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# Completion
-autoload -U compinit
-compinit
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
-zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
-    /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
-    #completion cache
-    zstyle ':completion:*' use-cache on
-    zstyle ':completion:*' cache-path ~/.zsh_cache
-    #colors
-    zmodload zsh/complist
-    setopt extendedglob
-    zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
+if [ -d ~/afs/bin ] ; then
+    export PATH=~afs/bin:$PATH
+fi
 
-# setopt correctall
+if [ ! -d ~/.local/bin ] ; then
+    mkdir -p ~/.local/bin
+fi
+export PATH=~/.local/bin:$PATH
 
-eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;36/' | dircolors /dev/stdin)
-#prompt
+if [ -d /usr/local/cuda-12.3/bin ] ; then
+    export PATH=/usr/local/cuda-12.3/bin:$PATH
+fi
 
-autoload -Uz promptinit && promptinit
-autoload -Uz vcs_info
+# History length
+HISTSIZE=1000
+HISTFILESIZE=2000
 
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%F{9}(%b)%f'
-zstyle ':vcs_info:*' enable git
+export LANG=en_US.utf8
+export NNTPSERVER="news.epita.fr"
+export EDITOR=vim
 
-export MANPATH="/usr/local/man:$MANPATH"
+if [ "$XDG_SESSION_TYPE" != "wayland" ]; then
+    setxkbmap -layout "fr"
+    setxkbmap -option caps:escape 2>/dev/null
+# else
+    # echo "You should use KBOPTIONS=\"caps:swapescape\" in the /etc/default/keyboard file and reboot to use capslock as escape"
+fi
+
+xset r rate 250 50 2>/dev/null
+
+alias ls='ls --color=auto'
+alias la='ls -a --color=auto'
+alias l='l -la --color=auto'
+alias mkdir='mkdir -p'
+alias vi=vim
+
+LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
+
+cd() {
+    if [ -z "$1" ]; then
+        builtin cd ~
+    else
+        builtin cd "$1" && ls --color=auto
+    fi
+}
+
+# colored man pages and less
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+if [ -f /usr/share/nvm/init-nvm.sh ]; then
+    source /usr/share/nvm/init-nvm.sh
+fi
+
+if [ -n "$WSL_DISTRO_NAME" ]; then
+    export DISPLAY=$(ip route list default | awk '{print $3}'):0
+    export LIBGL_ALWAYS_INDIRECT=1
+fi
+
+if [ -f "$HOME""/.cargo.env" ]; then
+    source "$HOME/.cargo/env"
+fi
+
+# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -111,30 +171,10 @@ export MANPATH="/usr/local/man:$MANPATH"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-
-alias gti='git'
-
-alias explorer='explorer.exe'
-alias start="explorer.exe"
-
-export EDITOR=/usr/bin/vim
-
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-source "$HOME/.cargo/env"
-export LIBGL_ALWAYS_INDIRECT=0
-
-source $ZSH/oh-my-zsh.sh
-
-alias ls='ls --color=auto'
-alias la='ls --color=auto -a'
-alias ll='ls --color=auto -alF'
-
-function cd() {
-    builtin cd $1 && ls
-}
-function mkcd() {
-    mkdir $1 && cd $1
-}
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

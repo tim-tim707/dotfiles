@@ -65,7 +65,11 @@ mkcd() {
 LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 
 cd() {
-    builtin cd "$1" && ls --color=auto
+    if [ -z "$1" ]; then
+        builtin cd ~
+    else
+        builtin cd "$1" && ls --color=auto
+    fi
 }
 
 gitac() {

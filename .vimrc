@@ -36,7 +36,8 @@ let g:clang_format#command = "clang-format-12"
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'vim-utils/vim-man'
+" Plug 'vim-utils/vim-man'
+
 noremap <leader><S-M> <Plug>(Vman)
 call plug#end()
 

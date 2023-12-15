@@ -30,7 +30,7 @@ export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 export EDITOR=vim
 
-if [ "$XDG_SESSION_TYPE" != "wayland" -a -z "$AFS_DIR" ]; then
+if [ "$XDG_SESSION_TYPE" != "wayland" -a -z "$AFS_DIR" -a -z "$WSL_DISTRO_NAME" ]; then
     setxkbmap -layout "fr"
     setxkbmap -option caps:escape 2>/dev/null
 # else

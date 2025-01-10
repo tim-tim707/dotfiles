@@ -1,3 +1,4 @@
-require("config/lazy")
-require("plugins/nvim-treesitter")
+require("core/options")
+require("core/lazy")
+require("core/mappings")
 

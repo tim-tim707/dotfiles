@@ -32,6 +32,11 @@ return {
             },
             keys = require("core.mappings").comment_nvim
         },
+        {
+                "chrisgrieser/nvim-spider",
+                lazy = true,
+		keys = require("core.mappings").nvim_spider
+        },
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {

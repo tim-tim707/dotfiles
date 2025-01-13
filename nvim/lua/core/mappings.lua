@@ -76,18 +76,54 @@ end, { expr = true, desc = "properly indent on empty line when insert" })
 --
 
 local plugins_mappings = {
+        -- chrisgrieser/nvim-spider
+	nvim_spider = {
+		{
+			"w",
+			"<Cmd>lua require('spider').motion('w')<CR>",
+			mode = { "n", "o", "x" },
+			desc = "Spider-w",
+		},
+		{
+			"e",
+			"<Cmd>lua require('spider').motion('e')<CR>",
+			mode = { "n", "o", "x" },
+			desc = "Spider-e",
+		},
+		{
+			"b",
+			"<Cmd>lua require('spider').motion('b')<CR>",
+			mode = { "n", "o", "x" },
+			desc = "Spider-b",
+		},
+	},
+        -- numToStr/Comment.nvim
+	comment_nvim = {
+		{
+			"<Leader>/",
+			function ()require("Comment.api").toggle.linewise.current() end,
+			mode = "n",
+			desc = "Toggle comment"
+		},
+		{
+			"<Leader>/",
+			"<ESC><Cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
+			mode = "v",
+			desc = "Toggle comment",
+		}
+	},
 	-- nvim-telescope/telescope.nvim
 	telescope = {
-		-- {
-		-- 	"<Leader>ff",
-		-- 	function () require("telescope.builtin").find_files() end,
-		-- 	desc = "Find files"
-		-- },
 		{
 			"<Leader>ff",
-			function () require("telescope").extensions.smart_open.smart_open() end,
+			function () require("telescope.builtin").find_files() end,
 			desc = "Find files"
 		},
+		-- {
+		-- 	"<Leader>ff",
+		-- 	function () require("telescope").extensions.smart_open.smart_open() end,
+		-- 	desc = "Find files"
+		-- },
 		{
 			"<Leader>fo",
 			function () require("telescope.builtin").oldfiles() end,
@@ -115,21 +151,6 @@ local plugins_mappings = {
 			end,
 			desc = "Find neovim help"
 		},
-	},
-        -- numToStr/Comment.nvim
-	comment_nvim = {
-		{
-			"<Leader>/",
-			function ()require("Comment.api").toggle.linewise.current() end,
-			mode = "n",
-			desc = "Toggle comment"
-		},
-		{
-			"<Leader>/",
-			"<ESC><Cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-			mode = "v",
-			desc = "Toggle comment",
-		}
 	},
 }
 

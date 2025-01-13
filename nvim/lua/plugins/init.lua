@@ -51,6 +51,13 @@ return {
 			require("plugins.configs.telescope_nvim")
 		end,
 	},
+        {
+            'echasnovski/mini.icons',
+            version = '*',
+            config = function()
+                require('mini.icons').setup()
+            end,
+        },
 	{
 		"folke/which-key.nvim",
 		keys = require("core.mappings").which_key,

@@ -5,7 +5,16 @@ end
 
 return {
         -- Font with icons
-        { "nvim-tree/nvim-web-devicons", opts = {} },
+        {
+            "nvim-tree/nvim-web-devicons", opts = {}
+        },
+        {
+            'echasnovski/mini.icons',
+            version = '*',
+            config = function()
+                require('mini.icons').setup()
+            end,
+        },
 	-- Treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -25,6 +34,7 @@ return {
 			require("plugins.configs.nvim-treesitter")
 		end,
 	},
+        -- Misc
         {
             "numToStr/Comment.nvim",
             opts = {
@@ -37,6 +47,7 @@ return {
                 lazy = true,
 		keys = require("core.mappings").nvim_spider
         },
+        -- File Search
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {
@@ -52,12 +63,24 @@ return {
 		end,
 	},
         {
-            'echasnovski/mini.icons',
-            version = '*',
-            config = function()
-                require('mini.icons').setup()
-            end,
-        },
+		"nvim-neo-tree/neo-tree.nvim",
+		-- cmd = "Neotree",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+		},
+		keys = require("core.mappings").neo_tree,
+		config = function()
+			require("plugins.configs.neo-tree")
+		end
+	},
+        -- Git
+	{
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("plugins.configs.gitsigns")
+		end,
+	},
+        -- Docs
 	{
 		"folke/which-key.nvim",
 		keys = require("core.mappings").which_key,

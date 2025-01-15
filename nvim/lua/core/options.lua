@@ -9,7 +9,23 @@ g.maplocalleader = " "
 opt.laststatus = 3
 opt.showmode = false
 
-opt.clipboard = "unnamedplus"
+if (vim.loop.os_uname().sysname == "Windows_NT") then
+    -- clipboard.vim takes a long time issues/9570
+    -- Saves ~4 seconds on big directory
+    g.clipboard = {
+      name = 'win32yank',
+      copy = {
+         ["+"] = 'win32yank.exe -i --crlf',
+         ["*"] = 'win32yank.exe -i --crlf',
+       },
+      paste = {
+         ["+"] = 'win32yank.exe -o --lf',
+         ["*"] = 'win32yank.exe -o --lf',
+      },
+      cache_enabled = 0,
+    }
+end
+opt.clipboard = "unnamedplus" -- allow nvim to access system clipboard
 opt.cursorline = true
 opt.cursorlineopt = "number"
 

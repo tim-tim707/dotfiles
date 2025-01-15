@@ -15,7 +15,7 @@
     autoStash = true
 
 [user]
-    email = timothee.denizou@epita.fr
+    email = denizoutimothee@gmail.com
     name = Timothee Denizou
 [alias]
     c = commit -m
@@ -33,12 +33,6 @@
     diff = auto
     interactive = auto
     status = auto
-
-[sendemail]
-    smtpencryption = tls
-    smtpserver = smtp.office365.com
-    smtpserverport = 587
-    smtpuser = timothee.denizou@epita.fr
 
 [init]
 	defaultBranch = master

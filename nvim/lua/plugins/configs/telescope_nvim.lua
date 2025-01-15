@@ -22,6 +22,7 @@ local config = {
 		file_ignore_patterns = {
 			".git/",
 			"node_modules",
+			"win_b64",
 		},
 
 		dynamic_preview_title = true,

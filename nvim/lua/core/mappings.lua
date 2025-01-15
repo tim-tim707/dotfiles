@@ -1,20 +1,4 @@
--- https://github.com/WIttyJudge/dotfiles
--- Bind keymap
-function map(mode, keys, command, opts)
-	local default_options = { silent = true }
-	-- merge default + user opts
-	local options = vim.tbl_extend("force", default_options, opts or {})
-
-	if type(keys) == "table" then
-		for _, keymap in ipairs(keys) do
-			map(mode, keymap, command, options)
-
-		end
-		return
-	end
-
-	vim.keymap.set(mode, keys, command, opts)
-end
+local map = require("internal.utils").map
 
 -- Easier split navigation, CTRL + hjlk
 map("n", "<C-j>", "<C-W><C-j>", { desc = "window down" })
@@ -117,13 +101,14 @@ local plugins_mappings = {
 		{
 			"<Leader>ff",
 			function () require("telescope.builtin").find_files() end,
+			-- function () require("telescope").extensions.smart_open.smart_open() end,
 			desc = "Find files"
 		},
-		-- {
-		-- 	"<Leader>ff",
-		-- 	function () require("telescope").extensions.smart_open.smart_open() end,
-		-- 	desc = "Find files"
-		-- },
+		{
+			"<Leader>fd",
+			function () require("telescope").extensions.dir.find_files() end,
+			desc = "Find files in directory"
+		},
 		{
 			"<Leader>fo",
 			function () require("telescope.builtin").oldfiles() end,
@@ -151,6 +136,11 @@ local plugins_mappings = {
 			end,
 			desc = "Find neovim help"
 		},
+	},
+        -- nvim-neo-tree/neo-tree.nvim
+	neo_tree = {
+		{ "<C-e>", "<Cmd>Neotree toggle<CR>", desc = "Toggle NvimTree" },
+		{ "<Leader>hf", "<Cmd>Neotree reveal<CR>", desc = "Find file inside tree" },
 	},
 }
 

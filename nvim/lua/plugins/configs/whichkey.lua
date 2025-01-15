@@ -1,7 +1,8 @@
--- https://github.com/kristijanhusak/vim-dadbod-ui
+-- https://github.com/folke/which-key.nvim
 local wk = require("which-key")
 
 local options = {
+        delay = 400,
 	icons = {
 		breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
 		separator = "➜ ", -- symbol used between a key and it's label

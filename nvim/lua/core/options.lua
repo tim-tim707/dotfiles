@@ -25,6 +25,10 @@ if (vim.loop.os_uname().sysname == "Windows_NT") then
       cache_enabled = 0,
     }
 end
+-- Disable netrw loading, use neotree instead
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+
 opt.clipboard = "unnamedplus" -- allow nvim to access system clipboard
 opt.cursorline = true
 opt.cursorlineopt = "number"

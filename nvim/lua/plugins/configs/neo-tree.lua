@@ -16,6 +16,7 @@ local config = {
 			hide_dotfiles = false,
 			hide_gitignored = false,
 		},
+                hijack_netrw_behavior = "open_current",
 	},
 
 	commands = {

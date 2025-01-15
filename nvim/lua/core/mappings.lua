@@ -48,11 +48,11 @@ map("n", "<Leader>9", "9gt", { desc = "tab 9" })
 
 -- Indent empty line
 map("n", "i", function()
-	if #vim.fn.getline(".") == 0 then
-		return [["_cc]]
-	else
-		return "i"
-	end
+    if #vim.fn.getline(".") == 0 then
+        return [["_cc]]
+    else
+        return "i"
+    end
 end, { expr = true, desc = "properly indent on empty line when insert" })
 
 --
@@ -60,88 +60,96 @@ end, { expr = true, desc = "properly indent on empty line when insert" })
 --
 
 local plugins_mappings = {
-        -- chrisgrieser/nvim-spider
-	nvim_spider = {
-		{
-			"w",
-			"<Cmd>lua require('spider').motion('w')<CR>",
-			mode = { "n", "o", "x" },
-			desc = "Spider-w",
-		},
-		{
-			"e",
-			"<Cmd>lua require('spider').motion('e')<CR>",
-			mode = { "n", "o", "x" },
-			desc = "Spider-e",
-		},
-		{
-			"b",
-			"<Cmd>lua require('spider').motion('b')<CR>",
-			mode = { "n", "o", "x" },
-			desc = "Spider-b",
-		},
-	},
-        -- numToStr/Comment.nvim
-	comment_nvim = {
-		{
-			"<Leader>/",
-			function ()require("Comment.api").toggle.linewise.current() end,
-			mode = "n",
-			desc = "Toggle comment"
-		},
-		{
-			"<Leader>/",
-			"<ESC><Cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-			mode = "v",
-			desc = "Toggle comment",
-		}
-	},
-	-- nvim-telescope/telescope.nvim
-	telescope = {
-		{
-			"<Leader>ff",
-			function () require("telescope.builtin").find_files() end,
-			-- function () require("telescope").extensions.smart_open.smart_open() end,
-			desc = "Find files"
-		},
-		{
-			"<Leader>fd",
-			function () require("telescope").extensions.dir.find_files() end,
-			desc = "Find files in directory"
-		},
-		{
-			"<Leader>fo",
-			function () require("telescope.builtin").oldfiles() end,
-			desc = "Find oldfiles"
-		},
-		{
-			"<Leader>fW",
-			function () require("telescope.builtin").live_grep() end,
-			desc = "Live grep"
-		},
-		{
-			"<Leader>fc",
-			function () require("telescope.builtin").grep_string() end,
-			desc = "Find for word under cursor"
-		},
-		{
-			"<Leader>fm",
-			function () require("telescope.builtin").man_pages() end,
-			desc = "Find man"
-		},
-		{
-			"<Leader>fh",
-			function ()
-				require("telescope.builtin").help_tags()
-			end,
-			desc = "Find neovim help"
-		},
-	},
-        -- nvim-neo-tree/neo-tree.nvim
-	neo_tree = {
-		{ "<C-e>", "<Cmd>Neotree toggle<CR>", desc = "Toggle NvimTree" },
-		{ "<Leader>hf", "<Cmd>Neotree reveal<CR>", desc = "Find file inside tree" },
-	},
+    -- chrisgrieser/nvim-spider
+    nvim_spider = {
+        {
+            "w",
+            "<Cmd>lua require('spider').motion('w')<CR>",
+            mode = { "n", "o", "x" },
+            desc = "Spider-w",
+        },
+        {
+            "e",
+            "<Cmd>lua require('spider').motion('e')<CR>",
+            mode = { "n", "o", "x" },
+            desc = "Spider-e",
+        },
+        {
+            "b",
+            "<Cmd>lua require('spider').motion('b')<CR>",
+            mode = { "n", "o", "x" },
+            desc = "Spider-b",
+        },
+    },
+    -- numToStr/Comment.nvim
+    comment_nvim = {
+        {
+            "<Leader>/",
+            function ()require("Comment.api").toggle.linewise.current() end,
+            mode = "n",
+            desc = "Toggle comment"
+        },
+        {
+            "<Leader>/",
+            "<ESC><Cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
+            mode = "v",
+            desc = "Toggle comment",
+        }
+    },
+    -- nvim-telescope/telescope.nvim
+    telescope = {
+        {
+            "<Leader>ff",
+            function () require("telescope.builtin").find_files() end,
+            -- function () require("telescope").extensions.smart_open.smart_open() end,
+            desc = "Find files"
+        },
+        {
+            "<Leader>fd",
+            function () require("telescope").extensions.dir.find_files() end,
+            desc = "Find files in directory"
+        },
+        {
+            "<Leader>fo",
+            function () require("telescope.builtin").oldfiles() end,
+            desc = "Find oldfiles"
+        },
+        {
+            "<Leader>fW",
+            function () require("telescope.builtin").live_grep() end,
+            desc = "Live grep"
+        },
+        {
+            "<Leader>fc",
+            function () require("telescope.builtin").grep_string() end,
+            desc = "Find for word under cursor"
+        },
+        {
+            "<Leader>fm",
+            function () require("telescope.builtin").man_pages() end,
+            desc = "Find man"
+        },
+        {
+            "<Leader>fh",
+            function ()
+                require("telescope.builtin").help_tags()
+            end,
+            desc = "Find neovim help"
+        },
+    },
+    -- nvim-neo-tree/neo-tree.nvim
+    neo_tree = {
+        { "<C-e>", "<Cmd>Neotree toggle<CR>", desc = "Toggle NvimTree" },
+        { "<Leader>hf", "<Cmd>Neotree reveal<CR>", desc = "Find file inside tree" },
+    },
+    -- sindrets/diffview.nvim
+    diffview = {
+        {
+            "<Leader>gc",
+            "<Cmd>DiffviewFileHistory<CR>",
+            desc = "Open diff view file history",
+        },
+    },
 }
 
 return plugins_mappings

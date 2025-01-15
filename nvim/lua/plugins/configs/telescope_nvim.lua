@@ -20,7 +20,7 @@ local config = {
 		},
 
 		file_ignore_patterns = {
-			".git/",
+			".git",
 			"node_modules",
 			"win_b64",
 		},

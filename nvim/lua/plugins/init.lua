@@ -100,6 +100,7 @@ return {
 
             "nvim-telescope/telescope.nvim",
         },
+        keys = require("core.mappings").neogit,
         config = true
     },
     -- Docs

@@ -140,15 +140,50 @@ local plugins_mappings = {
     },
     -- nvim-neo-tree/neo-tree.nvim
     neo_tree = {
-        { "<C-e>", "<Cmd>Neotree toggle<CR>", desc = "Toggle NvimTree" },
-        { "<Leader>hf", "<Cmd>Neotree reveal<CR>", desc = "Find file inside tree" },
+        {
+            "<C-e>",
+            "<Cmd>Neotree toggle<CR>",
+            desc = "Toggle NvimTree"
+        },
+        {
+            "<Leader>hf",
+            "<Cmd>Neotree reveal<CR>",
+            desc = "Find file inside tree"
+        },
     },
     -- sindrets/diffview.nvim
     diffview = {
         {
-            "<Leader>gc",
+            "<Leader>gd",
             "<Cmd>DiffviewFileHistory<CR>",
             desc = "Open diff view file history",
+        },
+    },
+    neogit = {
+        {
+            "<Leader>gs",
+            "<Cmd>Neogit kind=tab<CR>",
+            desc = "Open Neogit tab"
+        },
+        {
+            "<Leader>gc",
+            "<Cmd>Neogit commit<CR>",
+            desc = "Neogit commit"
+        },
+        {
+            "<Leader>gp",
+            "<Cmd>Neogit pull<CR>",
+            desc = "Neogit pull"
+        },
+        {
+            "<Leader>gP",
+            "<Cmd>Neogit push<CR>",
+            desc = "Neogit push"
+        },
+        {
+            "<Leader>gb",
+            "<Cmd>Telescope git_branches<CR>",
+            desc = "Neogit branches"
         },
     },
 }

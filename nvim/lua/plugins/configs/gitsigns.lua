@@ -14,7 +14,7 @@ local function on_attach(bufnr)
 			gs.next_hunk()
 		end)
 		return "<Ignore>"
-	end, { expr = true })
+	end, { expr = true,  desc = "next hunk" })
 
 	map("n", "<leader>gk", function()
 		if vim.wo.diff then
@@ -24,20 +24,20 @@ local function on_attach(bufnr)
 			gs.prev_hunk()
 		end)
 		return "<Ignore>"
-	end, { expr = true })
+	end, { expr = true, desc = "prev hunk" })
 
 	-- Actions
-	map("n", "<leader>ga", gs.stage_hunk)
+	map("n", "<leader>ga", gs.stage_hunk, { desc = "stage hunk" })
 	map("v", "<leader>ga", function()
 		gs.stage_hunk({ vim.fn.line("."), vim.fn.line("v") })
-	end)
+	end, { desc = "stage hunk" })
 
-	map("n", "<leader>gu", gs.reset_hunk)
+	map("n", "<leader>gu", gs.reset_hunk, { desc = "reset hunk" })
 	map("v", "<leader>gu", function()
 		gs.reset_hunk({ vim.fn.line("."), vim.fn.line("v") })
-	end)
+	end, { desc = "reset hunk" })
 
-	map("n", "<leader>gp", gs.preview_hunk)
+	map("n", "<leader>gp", gs.preview_hunk, { desc = "preview hunk" })
 end
 
 local config = {

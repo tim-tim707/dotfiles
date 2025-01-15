@@ -36,6 +36,7 @@ map("v", "<", "<gv")
 -- Tabs control
 map("n", "<Leader>tl", "<Cmd>tabnext<CR>", { desc = "tab right" })
 map("n", "<Leader>th", "<Cmd>tabprev<CR>", { desc = "tab left" })
+map("n", "<Leader>tq", "<Cmd>tabclose<CR>", { desc = "tab close" })
 map("n", "<Leader>1", "1gt", { desc = "tab 1" })
 map("n", "<Leader>2", "2gt", { desc = "tab 2" })
 map("n", "<Leader>3", "3gt", { desc = "tab 3" })

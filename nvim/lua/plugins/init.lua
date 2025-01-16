@@ -43,6 +43,14 @@ return {
         keys = require("core.mappings").comment_nvim
     },
     {
+        "kylechui/nvim-surround",
+        version = "*",
+        event = "VeryLazy",
+        config = function()
+            require("plugins.configs.nvim-surround")
+        end,
+    },
+    {
         "chrisgrieser/nvim-spider",
         lazy = true,
         keys = require("core.mappings").nvim_spider
@@ -71,7 +79,8 @@ return {
         keys = require("core.mappings").neo_tree,
         config = function()
             require("plugins.configs.neo-tree")
-        end
+        end,
+        lazy = false,
     },
     -- Git
     {

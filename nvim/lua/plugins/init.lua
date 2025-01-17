@@ -36,13 +36,6 @@ return {
     },
     -- Misc
     {
-        "numToStr/Comment.nvim",
-        opts = {
-            mappings = false,
-        },
-        keys = require("core.mappings").comment_nvim
-    },
-    {
         "kylechui/nvim-surround",
         version = "*",
         event = "VeryLazy",
@@ -54,6 +47,33 @@ return {
         "chrisgrieser/nvim-spider",
         lazy = true,
         keys = require("core.mappings").nvim_spider
+    },
+    -- IDE misc features
+    {
+        "numToStr/Comment.nvim",
+        opts = {
+            mappings = false,
+        },
+        keys = require("core.mappings").comment_nvim
+    },
+    {
+        "Pocco81/auto-save.nvim",
+        config = function()
+            require("auto-save").setup()
+        end,
+    },
+    {
+        'rmagatti/auto-session',
+        lazy = false,
+
+        ---enables autocomplete for opts
+        ---@module "auto-session"
+        ---@type AutoSession.Config
+        opts = {
+            suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
+            -- log_level = 'debug',
+        },
+        keys = require("core.mappings").auto_session
     },
     -- File Search
     {

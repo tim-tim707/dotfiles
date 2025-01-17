@@ -16,9 +16,10 @@ map("n", "<Right>", "<Cmd>vertical resize -2<CR>")
 map("n", "U", "<C-R>")
 
 -- Easier file save and exit
-map("n", "<Leader>w", "<Cmd>update<CR>", { desc = "save file" })
-map("n", "<Leader>W", "<Cmd>x<CR>", { desc = "save file and exit" })
+-- map("n", "<Leader>w", "<Cmd>update<CR>", { desc = "save file" })
+-- map("n", "<Leader>W", "<Cmd>x<CR>", { desc = "save file and exit" })
 map("n", "<Leader>q", "<Cmd>q<CR>", { desc = "exit" })
+map("n", "<Leader>Q", "<Cmd>qa<CR>", { desc = "exit workspace" })
 
 -- Use simple ; instead of shift + :
 map({ "n", "v" }, ";", ":", { silent = false })
@@ -97,6 +98,23 @@ local plugins_mappings = {
             desc = "Toggle comment",
         }
     },
+    auto_session = {
+        {
+            '<leader>wf',
+            '<cmd>SessionSearch<CR>', 
+            desc = 'Workspace search' 
+        },
+        {
+            '<leader>ws', 
+            '<cmd>SessionSave<CR>', 
+            desc = 'Workspace session' 
+        },
+        {
+            '<leader>wa', 
+            '<cmd>SessionToggleAutoSave<CR>', 
+            desc = 'Toggle workspace autosave' 
+        },
+    },
     -- nvim-telescope/telescope.nvim
     telescope = {
         {
@@ -119,6 +137,21 @@ local plugins_mappings = {
             "<Leader>fW",
             function () require("telescope.builtin").live_grep() end,
             desc = "Live grep"
+        },
+        {
+            "<Leader>fr",
+            function () require("telescope.builtin").resume() end,
+            desc = "Resume last search"
+        },
+        {
+            "<Leader>fq",
+            function () require("telescope.builtin").quickfix() end,
+            desc = "Quickfix list"
+        },
+        {
+            "<Leader>fQ",
+            function () require("telescope.builtin").quickfixhistory() end,
+            desc = "Quickfix history"
         },
         {
             "<Leader>fc",

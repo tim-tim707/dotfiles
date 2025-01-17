@@ -101,18 +101,18 @@ local plugins_mappings = {
     auto_session = {
         {
             '<leader>wf',
-            '<cmd>SessionSearch<CR>', 
-            desc = 'Workspace search' 
+            '<cmd>SessionSearch<CR>',
+            desc = 'Workspace search'
         },
         {
-            '<leader>ws', 
-            '<cmd>SessionSave<CR>', 
-            desc = 'Workspace session' 
+            '<leader>ws',
+            '<cmd>SessionSave<CR>',
+            desc = 'Workspace session'
         },
         {
-            '<leader>wa', 
-            '<cmd>SessionToggleAutoSave<CR>', 
-            desc = 'Toggle workspace autosave' 
+            '<leader>wa',
+            '<cmd>SessionToggleAutoSave<CR>',
+            desc = 'Toggle workspace autosave'
         },
     },
     -- nvim-telescope/telescope.nvim
